@@ -1,0 +1,6 @@
+node_modules/
+files/**/*.docx
+files/**/*.xlsx
+files/**/*.pptx
+*.log
+src/

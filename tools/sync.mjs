@@ -1,0 +1,196 @@
+import { readFile, readdir, stat, mkdir, copyFile } from "node:fs/promises";
+import { writeFile } from "node:fs/promises";
+import { basename, dirname, extname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const root = dirname(dirname(fileURLToPath(import.meta.url)));
+const config = JSON.parse(await readFile(join(root, "tools", "folder-map.json"), "utf8"));
+const portfolioRoot = resolve(root, config.portfolioPath);
+const ignoreSet = new Set(config.ignore.map((n) => n.toLowerCase()));
+
+const toolMap = {
+  ".docx": "Word",
+  ".xlsx": "Excel",
+  ".pptx": "PowerPoint",
+  ".pdf": "PDF",
+  ".py": "Python",
+  ".csv": "Excel",
+  ".png": "Image",
+  ".jpg": "Image",
+  ".jpeg": "Image",
+};
+
+function slugify(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function cleanTitle(name) {
+  return name.replace(/\.[^.]+$/, "").trim();
+}
+
+function isIgnored(name) {
+  return ignoreSet.has(name.toLowerCase()) || name.startsWith(".");
+}
+
+async function listDir(dir) {
+  try {
+    const entries = await readdir(dir, { withFileTypes: true });
+    return entries.filter((e) => !isIgnored(e.name));
+  } catch {
+    return [];
+  }
+}
+
+async function getFiles(dir) {
+  const entries = await listDir(dir);
+  const files = [];
+  for (const entry of entries) {
+    if (entry.isFile()) {
+      const ext = extname(entry.name).toLowerCase();
+      if (toolMap[ext]) {
+        const filePath = join(dir, entry.name);
+        const fileStat = await stat(filePath);
+        files.push({
+          name: entry.name,
+          ext,
+          path: filePath,
+          mtime: fileStat.mtime,
+        });
+      }
+    }
+  }
+  return files;
+}
+
+async function discoverProjects(roleDir, roleId) {
+  const entries = await listDir(roleDir);
+  const projects = [];
+
+  const subfolders = entries.filter((e) => e.isDirectory());
+  const looseFiles = await getFiles(roleDir);
+
+  for (const folder of subfolders) {
+    const projectDir = join(roleDir, folder.name);
+    const files = await getFiles(projectDir);
+    if (files.length === 0) continue;
+
+    const id = slugify(folder.name);
+    const latestDate = new Date(Math.max(...files.map((f) => f.mtime.getTime())));
+    const tools = [...new Set(files.map((f) => toolMap[f.ext]).filter(Boolean))];
+
+    projects.push({
+      id,
+      roleId,
+      title: cleanTitle(folder.name),
+      status: "Active",
+      date: `${latestDate.getFullYear()}-${String(latestDate.getMonth() + 1).padStart(2, "0")}`,
+      summary: "Project documents available — summary will be added.",
+      objective: "Objective will be added.",
+      context: "Context will be added.",
+      approach: "Approach will be added.",
+      result: "Result will be added.",
+      skills: [],
+      tools,
+      files: files.map((f) => ({
+        label: f.name,
+        type: toolMap[f.ext] || "File",
+        path: `/files/${roleId}/${id}/${f.name}`,
+      })),
+      _sourceFiles: files.map((f) => ({
+        src: f.path,
+        dest: join(root, "files", roleId, id, f.name),
+      })),
+    });
+  }
+
+  for (const file of looseFiles) {
+    const nameNoExt = cleanTitle(file.name);
+    const id = slugify(nameNoExt);
+    const tools = [toolMap[file.ext]].filter(Boolean);
+
+    projects.push({
+      id,
+      roleId,
+      title: nameNoExt,
+      status: "Active",
+      date: `${file.mtime.getFullYear()}-${String(file.mtime.getMonth() + 1).padStart(2, "0")}`,
+      summary: "Project document available — summary will be added.",
+      objective: "Objective will be added.",
+      context: "Context will be added.",
+      approach: "Approach will be added.",
+      result: "Result will be added.",
+      skills: [],
+      tools,
+      files: [
+        {
+          label: file.name,
+          type: toolMap[file.ext] || "File",
+          path: `/files/${roleId}/${id}/${file.name}`,
+        },
+      ],
+      _sourceFiles: [
+        {
+          src: file.path,
+          dest: join(root, "files", roleId, id, file.name),
+        },
+      ],
+    });
+  }
+
+  return projects;
+}
+
+async function run() {
+  console.log(`Scanning ${portfolioRoot}...\n`);
+
+  const allProjects = [];
+  let fileCopyCount = 0;
+
+  for (const [folderPath, roleId] of Object.entries(config.map)) {
+    const roleDir = join(portfolioRoot, folderPath);
+    const projects = await discoverProjects(roleDir, roleId);
+
+    if (projects.length > 0) {
+      const names = projects.map((p) => p.title).join(", ");
+      console.log(`  ${folderPath}: ${projects.length} project(s) — ${names}`);
+    }
+
+    allProjects.push(...projects);
+  }
+
+  console.log(`\nDiscovered ${allProjects.length} projects total.`);
+
+  for (const project of allProjects) {
+    for (const file of project._sourceFiles) {
+      await mkdir(dirname(file.dest), { recursive: true });
+      await copyFile(file.src, file.dest);
+      fileCopyCount++;
+    }
+  }
+
+  console.log(`Copied ${fileCopyCount} files to website-code/files/`);
+
+  const cleanProjects = allProjects.map(({ _sourceFiles, ...rest }) => rest);
+  const outPath = join(root, "assets", "js", "projects-sync.mjs");
+  const code = `// Auto-generated by tools/sync.mjs — do not edit manually\nexport default ${JSON.stringify(cleanProjects, null, 2)};\n`;
+  await writeFile(outPath, code, "utf8");
+  console.log(`Wrote ${cleanProjects.length} projects to projects-sync.mjs`);
+
+  // Regenerate pages
+  const { projects: allFinalProjects } = await import("../assets/js/content.mjs");
+  console.log(`\nContent.mjs now exports ${allFinalProjects.length} total projects (manual + synced).`);
+
+  const generate = join(root, "tools", "generate-pages.mjs");
+  const { execSync } = await import("node:child_process");
+  execSync(`node "${generate}"`, { stdio: "inherit" });
+
+  console.log("\nDone.");
+}
+
+run().catch((err) => {
+  console.error("Sync failed:", err);
+  process.exit(1);
+});

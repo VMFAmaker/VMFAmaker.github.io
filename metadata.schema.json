@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Portfolio Project Metadata",
+  "type": "object",
+  "required": ["title", "category", "status", "date", "skills"],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["Completed", "Active", "Experimental", "Conceptual"]
+    },
+    "date": {
+      "type": "string",
+      "description": "Use YYYY-MM where possible."
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "visibility": {
+      "type": "string",
+      "enum": ["public", "private", "abstracted", "nda-aware"]
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "path", "type"],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
+

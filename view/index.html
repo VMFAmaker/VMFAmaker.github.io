@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document Viewer | Virgilio MF Almeida</title>
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --bg-2: #101720;
+        --text: #e6e6e6;
+        --muted: #aab4bf;
+        --faint: #77828f;
+        --border: rgba(255, 255, 255, 0.1);
+        --teal: #58b6ad;
+      }
+      * { box-sizing: border-box; margin: 0; }
+      html, body { height: 100%; background: var(--bg); color: var(--text); font-family: Inter, system-ui, sans-serif; }
+      body { display: flex; flex-direction: column; }
+      .viewer-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        height: 52px;
+        padding: 0 24px;
+        border-bottom: 1px solid var(--border);
+        background: var(--bg-2);
+        flex-shrink: 0;
+      }
+      .viewer-bar a {
+        color: var(--teal);
+        text-decoration: none;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+      }
+      .viewer-bar a:hover { text-decoration: underline; }
+      .viewer-title {
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .viewer-notice {
+        color: var(--faint);
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        flex-shrink: 0;
+      }
+      .viewer-frame {
+        flex: 1;
+        width: 100%;
+        border: none;
+        background: var(--bg);
+      }
+      .viewer-error {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        color: var(--faint);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body oncontextmenu="return false">
+    <div class="viewer-bar">
+      <a id="back-link" href="/work/">Back to project</a>
+      <span class="viewer-title" id="doc-title"></span>
+      <span class="viewer-notice">View only</span>
+    </div>
+    <div id="viewer-root" style="flex:1;display:flex"></div>
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const file = params.get("file");
+        const title = params.get("title") || "Document";
+        const back = params.get("back") || "/work/";
+        const root = document.getElementById("viewer-root");
+        const titleEl = document.getElementById("doc-title");
+        const backLink = document.getElementById("back-link");
+
+        titleEl.textContent = title;
+        backLink.href = back;
+
+        if (!file) {
+          root.innerHTML = '<div class="viewer-error">No document specified.</div>';
+          return;
+        }
+
+        const embed = document.createElement("embed");
+        embed.src = file + "#toolbar=0&navpanes=0&scrollbar=1";
+        embed.type = "application/pdf";
+        embed.className = "viewer-frame";
+        root.appendChild(embed);
+      })();
+    </script>
+  </body>
+</html>

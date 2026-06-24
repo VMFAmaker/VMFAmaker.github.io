@@ -1,0 +1,19 @@
+{
+  "portfolioPath": "../../Portfolio",
+  "ignore": ["Development Logs", "Logs", "Log", "_build", ".claude", "desktop.ini"],
+  "map": {
+    "Business management/Business Counselling": "business-counselling",
+    "Business management/Business Plans": "business-plans",
+    "Business management/Strategy & Business Analysis": "strategy-analysis",
+    "Business management/Operations & Project Management": "operations-pm",
+    "Finance/Accountant": "accountant",
+    "Finance/Corporate Finance": "corporate-finance",
+    "Finance/Financial Analyst": "financial-analyst",
+    "Finance/Investment": "investment",
+    "Finance/Quantitative Analyst": "quant-analyst",
+    "Marketing/Graphic Design": "graphic-design",
+    "Marketing/Marketing plans": "marketing-plans",
+    "Academic Research/Research Papers": "research-papers",
+    "Academic Research/Research Drafts": "research-drafts"
+  }
+}
