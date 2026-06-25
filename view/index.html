@@ -65,7 +65,32 @@
         color: var(--faint);
         font-size: 0.9rem;
       }
+      .pdf-scroll-container {
+        flex: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 16px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+      .pdf-scroll-container canvas {
+        display: block;
+        max-width: 100%;
+        height: auto !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+      }
+      .pdf-loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        color: var(--faint);
+        font-size: 0.85rem;
+      }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs" type="module"></script>
   </head>
   <body oncontextmenu="return false">
     <div class="viewer-bar">
@@ -74,30 +99,63 @@
       <span class="viewer-notice">View only</span>
     </div>
     <div id="viewer-root" style="flex:1;display:flex"></div>
-    <script>
-      (function () {
-        const params = new URLSearchParams(window.location.search);
-        const file = params.get("file");
-        const title = params.get("title") || "Document";
-        const back = params.get("back") || "/work/";
-        const root = document.getElementById("viewer-root");
-        const titleEl = document.getElementById("doc-title");
-        const backLink = document.getElementById("back-link");
+    <script type="module">
+      const params = new URLSearchParams(window.location.search);
+      const file = params.get("file");
+      const title = params.get("title") || "Document";
+      const back = params.get("back") || "/work/";
+      const root = document.getElementById("viewer-root");
+      const titleEl = document.getElementById("doc-title");
+      const backLink = document.getElementById("back-link");
 
-        titleEl.textContent = title;
-        backLink.href = back;
+      titleEl.textContent = title;
+      backLink.href = back;
 
-        if (!file) {
-          root.innerHTML = '<div class="viewer-error">No document specified.</div>';
-          return;
+      if (!file) {
+        root.innerHTML = '<div class="viewer-error">No document specified.</div>';
+      } else {
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 768;
+
+        if (isMobile) {
+          root.innerHTML = '<div class="pdf-loading">Loading document…</div>';
+
+          const pdfjsLib = await import("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs");
+          pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.mjs";
+
+          try {
+            const pdf = await pdfjsLib.getDocument(file).promise;
+            root.innerHTML = "";
+            const container = document.createElement("div");
+            container.className = "pdf-scroll-container";
+            root.appendChild(container);
+
+            const containerWidth = container.clientWidth - 32;
+
+            for (let i = 1; i <= pdf.numPages; i++) {
+              const page = await pdf.getPage(i);
+              const unscaledViewport = page.getViewport({ scale: 1 });
+              const scale = Math.min(2, containerWidth / unscaledViewport.width);
+              const viewport = page.getViewport({ scale });
+
+              const canvas = document.createElement("canvas");
+              canvas.width = viewport.width;
+              canvas.height = viewport.height;
+              canvas.style.width = Math.min(containerWidth, viewport.width) + "px";
+              container.appendChild(canvas);
+
+              await page.render({ canvasContext: canvas.getContext("2d"), viewport }).promise;
+            }
+          } catch (err) {
+            root.innerHTML = '<div class="viewer-error">Could not load document.</div>';
+          }
+        } else {
+          const embed = document.createElement("embed");
+          embed.src = file + "#toolbar=0&navpanes=0&scrollbar=1";
+          embed.type = "application/pdf";
+          embed.className = "viewer-frame";
+          root.appendChild(embed);
         }
-
-        const embed = document.createElement("embed");
-        embed.src = file + "#toolbar=0&navpanes=0&scrollbar=1";
-        embed.type = "application/pdf";
-        embed.className = "viewer-frame";
-        root.appendChild(embed);
-      })();
+      }
     </script>
   </body>
 </html>

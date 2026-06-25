@@ -460,10 +460,11 @@ function renderContact() {
     <div class="page-header">
       ${introKicker("Contact")}
       <h1>Get in touch.</h1>
-      <p>Reach out via email or connect on LinkedIn.</p>
+      <p>Reach out via email, phone, or connect on LinkedIn.</p>
     </div>
     <div class="contact-list">
       <a href="mailto:gilalmeida-2005@hotmail.com"><span>Email</span><strong>gilalmeida-2005@hotmail.com</strong></a>
+      <a href="tel:+447377254057"><span>Phone</span><strong>+44 7377 254057</strong></a>
       <a href="${escapeHtml(profile.linkedIn)}"><span>LinkedIn</span><strong>Virgilio MF Almeida</strong></a>
     </div>
   `);
