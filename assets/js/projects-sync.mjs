@@ -845,5 +845,51 @@ export default [
         "path": "/files/quant-analyst/python-charts/_style.py"
       }
     ]
+  },
+  {
+    "id": "subconscious-learning",
+    "roleId": "research-papers",
+    "title": "Subconscious Learning",
+    "status": "Active",
+    "date": "2026-04",
+    "summary": "Project documents available — summary will be added.",
+    "objective": "Objective will be added.",
+    "context": "Context will be added.",
+    "approach": "Approach will be added.",
+    "result": "Result will be added.",
+    "skills": [],
+    "tools": [
+      "Word"
+    ],
+    "files": [
+      {
+        "label": "Subconscious Learning.docx",
+        "type": "Word",
+        "path": "/files/research-papers/subconscious-learning/Subconscious Learning.docx"
+      }
+    ]
+  },
+  {
+    "id": "3d-printed-housing-in-uk",
+    "roleId": "research-papers",
+    "title": "3D Printed Housing in UK",
+    "status": "Active",
+    "date": "2026-06",
+    "summary": "Project documents available — summary will be added.",
+    "objective": "Objective will be added.",
+    "context": "Context will be added.",
+    "approach": "Approach will be added.",
+    "result": "Result will be added.",
+    "skills": [],
+    "tools": [
+      "Word"
+    ],
+    "files": [
+      {
+        "label": "3D Printed Housing in the UK.docx",
+        "type": "Word",
+        "path": "/files/research-papers/3d-printed-housing-in-uk/3D Printed Housing in the UK.docx"
+      }
+    ]
   }
 ];

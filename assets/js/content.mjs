@@ -305,6 +305,8 @@ const skillsOverrides = {
   "python-charts": ["Data visualisation", "Python programming", "Chart design", "Statistical graphics", "Data analysis", "Exploratory analysis", "Presentation of data"],
   "a-z": ["Business analysis", "Strategic diagnosis", "Financial analysis", "Executive writing", "Competitive analysis", "Report structuring", "Management recommendation"],
   "the-brass-automaton": ["Business planning", "Financial modelling", "Market analysis", "Strategic planning", "Pitch presentation", "Action planning", "Creative industries analysis"],
+  "subconscious-learning": ["Academic writing", "Critical analysis", "Evidence evaluation", "Research methodology", "Literature review", "Structured argumentation", "Psychology research"],
+  "3d-printed-housing-in-uk": ["Academic writing", "Critical analysis", "Evidence evaluation", "Research methodology", "Policy analysis", "Construction technology", "Housing research"],
 };
 
 const manualIds = new Set(manualProjects.map((p) => p.id));
