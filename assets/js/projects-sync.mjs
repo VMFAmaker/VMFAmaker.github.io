@@ -36,52 +36,6 @@ export default [
     ]
   },
   {
-    "id": "a-z-report",
-    "roleId": "business-counselling",
-    "title": "A-Z Report",
-    "status": "Active",
-    "date": "2026-03",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "Word"
-    ],
-    "files": [
-      {
-        "label": "A-Z Report.docx",
-        "type": "Word",
-        "path": "/files/business-counselling/a-z-report/A-Z Report.docx"
-      }
-    ]
-  },
-  {
-    "id": "nicholas-cars-report",
-    "roleId": "business-counselling",
-    "title": "Nicholas Cars Report",
-    "status": "Active",
-    "date": "2026-02",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "Word"
-    ],
-    "files": [
-      {
-        "label": "Nicholas Cars Report.docx",
-        "type": "Word",
-        "path": "/files/business-counselling/nicholas-cars-report/Nicholas Cars Report.docx"
-      }
-    ]
-  },
-  {
     "id": "knowledgeable-new",
     "roleId": "business-plans",
     "title": "Knowledgeable (NEW)",
@@ -242,163 +196,37 @@ export default [
     ]
   },
   {
-    "id": "business-knowledgeable-old",
-    "roleId": "business-plans",
-    "title": "Business Knowledgeable (old)",
-    "status": "Active",
-    "date": "2026-06",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "PowerPoint"
-    ],
-    "files": [
-      {
-        "label": "Business Knowledgeable (old).pptx",
-        "type": "PowerPoint",
-        "path": "/files/business-plans/business-knowledgeable-old/Business Knowledgeable (old).pptx"
-      }
-    ]
-  },
-  {
-    "id": "business-va",
-    "roleId": "business-plans",
-    "title": "Business VA",
-    "status": "Active",
-    "date": "2026-06",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "PowerPoint"
-    ],
-    "files": [
-      {
-        "label": "Business VA .pptx",
-        "type": "PowerPoint",
-        "path": "/files/business-plans/business-va/Business VA .pptx"
-      }
-    ]
-  },
-  {
-    "id": "random-business",
-    "roleId": "business-plans",
-    "title": "Random Business",
-    "status": "Active",
-    "date": "2026-06",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "PowerPoint"
-    ],
-    "files": [
-      {
-        "label": "Random Business.pptx",
-        "type": "PowerPoint",
-        "path": "/files/business-plans/random-business/Random Business.pptx"
-      }
-    ]
-  },
-  {
-    "id": "t-p-business",
-    "roleId": "business-plans",
-    "title": "T&P Business",
-    "status": "Active",
-    "date": "2026-06",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "PowerPoint"
-    ],
-    "files": [
-      {
-        "label": "T&P Business.pptx",
-        "type": "PowerPoint",
-        "path": "/files/business-plans/t-p-business/T&P Business.pptx"
-      }
-    ]
-  },
-  {
-    "id": "meridian-digital-holdings-financial-model",
+    "id": "meridian-digital-holding",
     "roleId": "investment",
-    "title": "Meridian Digital Holdings - Financial Model",
+    "title": "Meridian Digital Holding",
     "status": "Active",
     "date": "2026-06",
-    "summary": "Project document available — summary will be added.",
+    "summary": "Project documents available — summary will be added.",
     "objective": "Objective will be added.",
     "context": "Context will be added.",
     "approach": "Approach will be added.",
     "result": "Result will be added.",
     "skills": [],
     "tools": [
-      "Excel"
+      "Excel",
+      "Word",
+      "PowerPoint"
     ],
     "files": [
       {
         "label": "Meridian Digital Holdings - Financial Model.xlsx",
         "type": "Excel",
-        "path": "/files/investment/meridian-digital-holdings-financial-model/Meridian Digital Holdings - Financial Model.xlsx"
-      }
-    ]
-  },
-  {
-    "id": "meridian-digital-holdings-investment-analysis-report",
-    "roleId": "investment",
-    "title": "Meridian Digital Holdings - Investment Analysis Report",
-    "status": "Active",
-    "date": "2026-06",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "Word"
-    ],
-    "files": [
+        "path": "/files/investment/meridian-digital-holding/Meridian Digital Holdings - Financial Model.xlsx"
+      },
       {
         "label": "Meridian Digital Holdings - Investment Analysis Report.docx",
         "type": "Word",
-        "path": "/files/investment/meridian-digital-holdings-investment-analysis-report/Meridian Digital Holdings - Investment Analysis Report.docx"
-      }
-    ]
-  },
-  {
-    "id": "meridian-digital-holdings-investment-pitch-deck",
-    "roleId": "investment",
-    "title": "Meridian Digital Holdings - Investment Pitch Deck",
-    "status": "Active",
-    "date": "2026-06",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "PowerPoint"
-    ],
-    "files": [
+        "path": "/files/investment/meridian-digital-holding/Meridian Digital Holdings - Investment Analysis Report.docx"
+      },
       {
         "label": "Meridian Digital Holdings - Investment Pitch Deck.pptx",
         "type": "PowerPoint",
-        "path": "/files/investment/meridian-digital-holdings-investment-pitch-deck/Meridian Digital Holdings - Investment Pitch Deck.pptx"
+        "path": "/files/investment/meridian-digital-holding/Meridian Digital Holdings - Investment Pitch Deck.pptx"
       }
     ]
   },
@@ -510,29 +338,6 @@ export default [
         "label": "Project_Apex_Risk_Report.docx",
         "type": "Word",
         "path": "/files/quant-analyst/project-apex/Project_Apex_Risk_Report.docx"
-      }
-    ]
-  },
-  {
-    "id": "rip-2-report-copy",
-    "roleId": "research-papers",
-    "title": "RIP 2 Report Copy",
-    "status": "Active",
-    "date": "2026-04",
-    "summary": "Project document available — summary will be added.",
-    "objective": "Objective will be added.",
-    "context": "Context will be added.",
-    "approach": "Approach will be added.",
-    "result": "Result will be added.",
-    "skills": [],
-    "tools": [
-      "Word"
-    ],
-    "files": [
-      {
-        "label": "RIP 2 Report Copy.docx",
-        "type": "Word",
-        "path": "/files/research-papers/rip-2-report-copy/RIP 2 Report Copy.docx"
       }
     ]
   }

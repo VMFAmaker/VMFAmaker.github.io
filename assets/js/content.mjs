@@ -1,12 +1,28 @@
 export const profile = {
   name: "Virgilio MF Almeida",
-  role: "BBA student building skills in finance, strategy, and business analysis",
+  role: "O segredo é so bulir",
   subtitle:
     "Structured portfolio across Business Management, Finance, Marketing, and Academic Research — organised by role and supported by real deliverables.",
   academic: "BBA, SP Jain London",
   graduation: "2028",
-  languages: ["Portuguese", "English", "Spanish", "French (limited proficiency)"],
-  email: "email@example.com",
+  languages: [
+    { name: "Portuguese", level: "Native" },
+    { name: "Spanish", level: "C2" },
+    { name: "English", level: "C2" },
+    { name: "French", level: "B1" },
+  ],
+  qualifications: [
+    { title: "BBA — Bachelor of Business Administration", institution: "SP Jain London", period: "2024–2028" },
+    { title: "A-Levels", institution: "Blenheim Highschool", period: "2022–2024", grades: "Spanish B, Business B, Mathematics C, Physics C, Psychology D" },
+  ],
+  experience: [
+    { role: "Youth Counsellor & Pastor Assistant", type: "Volunteer", period: "Feb 2022 – Present", company: "ICMAV London Ltd", location: "Epsom" },
+    { role: "Marketing Intern", period: "Jan 2025 – May 2025", company: "Shiok Kitchen Catering", location: "Singapore" },
+    { role: "Waiter", period: "Jan 2023 – Apr 2025", company: "El Rincon", location: "Tottenham Corner" },
+    { role: "Teacher Assistant", type: "Volunteer", period: "May 2023 – Jul 2023", company: "Blenheim High School", location: "Epsom" },
+    { role: "Private Tutor", period: "Oct 2023 – Dec 2024 & Aug 2025 – Present", company: "Freelance", location: "Remote" },
+  ],
+  email: "gilalmeida-2005@hotmail.com",
   linkedIn: "https://www.linkedin.com/in/virgilio-mf-almeida",
 };
 
@@ -277,8 +293,21 @@ try {
   // No synced projects yet — run `npm run sync` to generate
 }
 
+const skillsOverrides = {
+  "nicholas-cars": ["Business analysis", "Strategic diagnosis", "Financial analysis", "Executive writing", "Data analysis", "Competitive analysis", "Report structuring"],
+  "knowledgeable-new": ["Business planning", "Financial modelling", "Market analysis", "Strategic planning", "Pitch presentation", "Action planning", "Feasibility analysis"],
+  "knowledgeable-old": ["Business planning", "Financial modelling", "Market research", "Strategic thinking", "Pitch development", "Action planning", "Risk assessment"],
+  "layerstone": ["Business planning", "Financial modelling", "Market analysis", "Strategic planning", "Pitch presentation", "Action planning", "Competitive positioning"],
+  "mustard-seed": ["Business planning", "Financial modelling", "Market research", "Strategic planning", "Pitch presentation", "Action planning", "Startup feasibility"],
+  "meridian-digital-holding": ["Investment analysis", "Financial modelling", "Valuation", "Due diligence", "Pitch deck creation", "Report writing", "Market assessment"],
+  "project-apex": ["Risk modelling", "Quantitative analysis", "Statistical analysis", "Monte Carlo simulation", "VaR calculation", "Data visualisation", "Portfolio risk assessment"],
+  "rip-2-report-copy": ["Academic writing", "Critical analysis", "Evidence evaluation", "Research methodology", "Literature review", "Structured argumentation", "Citation management"],
+};
+
 const manualIds = new Set(manualProjects.map((p) => p.id));
-const mergedSynced = syncedProjects.filter((p) => !manualIds.has(p.id));
+const mergedSynced = syncedProjects
+  .filter((p) => !manualIds.has(p.id))
+  .map((p) => skillsOverrides[p.id] ? { ...p, skills: skillsOverrides[p.id] } : p);
 export const projects = [...manualProjects, ...mergedSynced];
 
 export const thinkingEntries = [
@@ -320,6 +349,10 @@ export const scriptures = {
   "finance": {
     verse: "Whoever loves money never has enough; whoever loves wealth is never satisfied with their income. This too is meaningless.",
     reference: "Ecclesiastes 5:10 — NIV",
+  },
+  "academic-research": {
+    verse: "An intelligent heart acquires knowledge, and the ear of the wise seeks knowledge.",
+    reference: "Proverbs 18:15 — ESV",
   },
 };
 

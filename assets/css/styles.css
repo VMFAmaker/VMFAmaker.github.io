@@ -276,7 +276,7 @@ button {
 .page-header h1 {
   margin: 0;
   color: var(--heading);
-  font-size: clamp(3.2rem, 7vw, 6.9rem);
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
   font-weight: 760;
   letter-spacing: -0.065em;
   line-height: 0.95;
@@ -447,7 +447,7 @@ section + section {
 .section-grid h2 {
   margin-bottom: 0;
   color: var(--heading);
-  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-size: clamp(1.6rem, 3vw, 2.8rem);
   font-weight: 720;
   letter-spacing: -0.055em;
   line-height: 1;
@@ -489,8 +489,8 @@ section + section {
 .area-card,
 .project-card,
 .info-card {
-  min-height: 230px;
-  padding: 22px;
+  min-height: 180px;
+  padding: 16px 18px;
   transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
 }
 
@@ -546,11 +546,119 @@ section + section {
   text-transform: uppercase;
 }
 
+.info-card-wide {
+  grid-column: 1 / -1;
+}
+
+.qual-entry {
+  margin-bottom: 12px;
+}
+
+.qual-entry strong {
+  display: block;
+  color: var(--heading);
+  font-size: 0.95rem;
+}
+
+.qual-entry span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.qual-grades {
+  color: var(--faint);
+  font-size: 0.82rem;
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lang-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.lang-entry:last-child {
+  border-bottom: none;
+}
+
+.lang-entry span:first-child {
+  color: var(--heading);
+  font-size: 0.95rem;
+}
+
+.lang-level {
+  color: var(--faint);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exp-entry {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.exp-entry:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.exp-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.exp-top strong {
+  color: var(--heading);
+  font-size: 0.95rem;
+}
+
+.exp-type {
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  color: var(--faint);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.exp-detail {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.exp-period {
+  display: block;
+  color: var(--faint);
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 286px;
+  min-height: 200px;
 }
 
 .project-card-top,
@@ -629,6 +737,22 @@ section + section {
 .project-detail .page-header {
   grid-column: 1 / -1;
   margin-bottom: 18px;
+}
+
+.project-detail .page-header .kicker {
+  margin-bottom: 24px;
+}
+
+.project-detail .page-header h1 {
+  margin-bottom: 16px;
+}
+
+.project-detail .page-header .project-meta-row {
+  margin-bottom: 12px;
+}
+
+.project-detail .page-header > p {
+  margin-top: 24px;
 }
 
 .detail-grid {
@@ -842,7 +966,7 @@ pre {
 .section-block-header h2 {
   margin: 0 0 8px;
   color: var(--heading);
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   font-weight: 720;
   letter-spacing: -0.04em;
   line-height: 1.1;
@@ -856,47 +980,57 @@ pre {
 }
 
 .role-block {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .role-header {
-  margin-bottom: 16px;
-  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
   border: 1px solid var(--border);
   border-left: 3px solid var(--area-color, var(--teal));
   background: var(--card-bg);
+  cursor: pointer;
+  list-style: none;
+}
+
+.role-header::-webkit-details-marker {
+  display: none;
 }
 
 .role-header h3 {
-  margin: 0 0 6px;
+  margin: 0;
   color: var(--heading);
   font-size: 1.08rem;
   font-weight: 680;
   letter-spacing: -0.01em;
 }
 
-.role-header p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.7;
-}
-
-.role-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 10px;
-}
-
-.role-tool {
+.role-toggle-meta {
+  white-space: nowrap;
+  padding: 4px 10px;
   border: 1px solid var(--border);
   color: var(--faint);
-  padding: 3px 8px;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.role-header:hover .role-toggle-meta {
+  border-color: var(--area-color, var(--teal));
+  color: var(--text);
+}
+
+.role-block[open] > .role-header {
+  margin-bottom: 16px;
+}
+
+.role-block > .project-grid {
+  padding-left: 18px;
 }
 
 .scripture-block {
@@ -1059,7 +1193,11 @@ pre {
 
   .section-heading h2,
   .section-grid h2 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
+  }
+
+  .info-card-wide {
+    grid-column: 1;
   }
 
   .project-card-top,

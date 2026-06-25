@@ -208,7 +208,6 @@ function renderHome() {
         ${introKicker("Portfolio")}
         <h1>${escapeHtml(profile.name)}</h1>
         <p class="hero-subtitle">${escapeHtml(profile.role)}</p>
-        <p class="hero-description">${escapeHtml(profile.subtitle)}</p>
         <div class="hero-actions">
           <a class="button primary" href="/work/">View work</a>
           <a class="button secondary" href="/about/">About me</a>
@@ -229,41 +228,22 @@ function renderHome() {
 
     <section class="section-grid two">
       <div>
-        ${introKicker("About This Portfolio")}
-        <h2>Organised by role, supported by real deliverables.</h2>
+        ${introKicker("Why?")}
       </div>
       <div class="prose-block">
         <p>
-          This portfolio is structured across four areas — Business Management, Finance, Marketing, and Academic Research.
-          Each area is divided by job role, and each project shows the tools used, skills demonstrated, and actual documents produced.
+          Work speaks where words fall short. This portfolio exists not to impress, but to show — clearly and honestly — what has been done, how it was done, and what was learnt in the process.
         </p>
         <p>
-          The goal is to make work inspectable: what problem was addressed, what approach was taken,
-          and what evidence sits behind it.
+          The obstacle is the way. Every project here began with a problem that demanded thought, discipline, and execution. The purpose is not comfort but growth — to build real skill through real work, and to let the evidence stand on its own.
         </p>
       </div>
-    </section>
-
-    ${crossDivider()}
-
-    <section>
-      <div class="section-heading">
-        ${introKicker("Areas")}
-        <h2>Four areas, organised by career path</h2>
-      </div>
-      <div class="area-grid">${sections.map(sectionCard).join("")}</div>
     </section>
 
     ${crossDivider()}
 
     ${visibleProjects.length > 0 ? `
-    <section>
-      <div class="section-heading">
-        ${introKicker("Recent Work")}
-        <h2>Latest project entries</h2>
-      </div>
-      <div class="project-grid">${visibleProjects.slice(0, 4).map(projectCard).join("")}</div>
-    </section>
+    <div class="project-grid">${visibleProjects.slice(0, 4).map(projectCard).join("")}</div>
     ` : ""}
 
     ${scriptureBlock("home-bottom")}
@@ -274,56 +254,55 @@ function renderAbout() {
   return shell(`
     <div class="page-header">
       ${introKicker("About")}
-      <h1>Analytical, operational, and communication-led.</h1>
       <p>
-        Virgilio MF Almeida is a BBA student at SP Jain London, graduating in 2028. This portfolio frames work
-        through finance, business analysis, strategic thinking, and clear communication.
+        Virgilio MF Almeida is a BBA student at SP Jain London, graduating in 2028. Driven by faith and a desire to serve,
+        he seeks to use his skills in business, finance, and strategy as tools for aid — working to show Christ through
+        honest effort, disciplined thinking, and care for others.
       </p>
     </div>
 
     <div class="info-grid">
       <article class="info-card">
-        <h2>Academic base</h2>
-        <p>${escapeHtml(profile.academic)}. Graduation: ${escapeHtml(profile.graduation)}.</p>
+        <h2>Qualifications</h2>
+        ${profile.qualifications.map((q) => `
+          <div class="qual-entry">
+            <strong>${escapeHtml(q.title)}</strong>
+            <span>${escapeHtml(q.institution)} — ${escapeHtml(q.period)}</span>
+            ${q.grades ? `<span class="qual-grades">${escapeHtml(q.grades)}</span>` : ""}
+          </div>
+        `).join("")}
       </article>
       <article class="info-card">
         <h2>Languages</h2>
-        <p>${profile.languages.map(escapeHtml).join(" | ")}</p>
+        <div class="lang-list">
+          ${profile.languages.map((l) => `<div class="lang-entry"><span>${escapeHtml(l.name)}</span><span class="lang-level">${escapeHtml(l.level)}</span></div>`).join("")}
+        </div>
+      </article>
+      <article class="info-card info-card-wide">
+        <h2>Experience</h2>
+        <div class="exp-list">
+          ${profile.experience.map((e) => `
+            <div class="exp-entry">
+              <div class="exp-top">
+                <strong>${escapeHtml(e.role)}</strong>${e.type ? `<span class="exp-type">${escapeHtml(e.type)}</span>` : ""}
+              </div>
+              <span class="exp-detail">${escapeHtml(e.company)} — ${escapeHtml(e.location)}</span>
+              <span class="exp-period">${escapeHtml(e.period)}</span>
+            </div>
+          `).join("")}
+        </div>
       </article>
       <article class="info-card">
-        <h2>Focus areas</h2>
-        <p>Finance (primary), Business Management, Marketing, and Academic Research — with emphasis on numerical discipline and strategic judgement.</p>
-      </article>
-      <article class="info-card">
-        <h2>Portfolio approach</h2>
-        <p>Every project includes multiple deliverables — Word reports, Excel models, PowerPoint decks — matching the tools used in real professional roles.</p>
+        <h2>Philosophy</h2>
+        <p>Philosophy will be added.</p>
       </article>
     </div>
-
-    <section>
-      <div class="section-heading">
-        ${introKicker("Thinking")}
-        <h2>Notes on systems, work, and judgement</h2>
-      </div>
-      <div class="timeline-list">
-        ${thinkingEntries
-          .map(
-            (entry) => `
-              <article>
-                <span>${escapeHtml(entry.date)}</span>
-                <h2>${escapeHtml(entry.title)}</h2>
-                <p>${escapeHtml(entry.summary)}</p>
-              </article>
-            `,
-          )
-          .join("")}
-      </div>
-    </section>
   `);
 }
 
 function renderWork() {
   const filterChips = sections
+    .filter((s) => getVisibleProjectsBySection(s.id).length > 0)
     .map(
       (s) => `
         <button class="filter-chip" data-filter="${s.id}" style="--chip-color: ${s.accent}">
@@ -337,18 +316,19 @@ function renderWork() {
   const groupedContent = sections.map((section) => {
     const sectionRoles = getRolesBySection(section.id);
     const sectionProjectCount = getVisibleProjectsBySection(section.id).length;
+    if (sectionProjectCount === 0) return "";
+
     const roleBlocks = sectionRoles.map((role) => {
       const roleProjects = getVisibleProjectsByRole(role.id);
       if (roleProjects.length === 0) return "";
       return `
-        <div class="role-block" data-section="${section.id}">
-          <div class="role-header" style="--area-color: ${section.accent}">
+        <details class="role-block" data-section="${section.id}">
+          <summary class="role-header" style="--area-color: ${section.accent}">
             <h3>${escapeHtml(role.title)}</h3>
-            <p>${escapeHtml(role.summary)}</p>
-            ${role.tools?.length ? `<div class="role-tools">${role.tools.map((t) => `<span class="role-tool">${escapeHtml(t)}</span>`).join("")}</div>` : ""}
-          </div>
+            <span class="role-toggle-meta">${roleProjects.length} project${roleProjects.length !== 1 ? "s" : ""}</span>
+          </summary>
           <div class="project-grid">${roleProjects.map(projectCard).join("")}</div>
-        </div>
+        </details>
       `;
     }).filter(Boolean).join("");
 
@@ -358,17 +338,16 @@ function renderWork() {
       <details class="section-block" data-section-group="${section.id}">
         <summary class="section-block-header" style="--area-color: ${section.accent}">
           <div class="section-summary-content">
-            ${introKicker(section.title)}
             <h2>${escapeHtml(section.title)}</h2>
             <p>${escapeHtml(section.summary)}</p>
           </div>
           <span class="section-toggle-meta">${sectionProjectCount} project${sectionProjectCount !== 1 ? "s" : ""}</span>
-          ${sectionScripture}
         </summary>
-        ${roleBlocks || `<p class="empty-state">No completed projects yet.</p>`}
+        ${sectionScripture}
+        ${roleBlocks}
       </details>
     `;
-  }).join("");
+  }).filter(Boolean).join("");
 
   return shell(`
     <div class="page-header">
@@ -484,7 +463,7 @@ function renderContact() {
       <p>Reach out via email or connect on LinkedIn.</p>
     </div>
     <div class="contact-list">
-      <a href="mailto:${escapeHtml(profile.email)}"><span>Email</span><strong>${escapeHtml(profile.email)}</strong></a>
+      <a href="mailto:gilalmeida-2005@hotmail.com"><span>Email</span><strong>gilalmeida-2005@hotmail.com</strong></a>
       <a href="${escapeHtml(profile.linkedIn)}"><span>LinkedIn</span><strong>Virgilio MF Almeida</strong></a>
     </div>
   `);

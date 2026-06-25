@@ -70,7 +70,6 @@ async function discoverProjects(roleDir, roleId) {
   const projects = [];
 
   const subfolders = entries.filter((e) => e.isDirectory());
-  const looseFiles = await getFiles(roleDir);
 
   for (const folder of subfolders) {
     const projectDir = join(roleDir, folder.name);
@@ -103,40 +102,6 @@ async function discoverProjects(roleDir, roleId) {
         src: f.path,
         dest: join(root, "files", roleId, id, f.name),
       })),
-    });
-  }
-
-  for (const file of looseFiles) {
-    const nameNoExt = cleanTitle(file.name);
-    const id = slugify(nameNoExt);
-    const tools = [toolMap[file.ext]].filter(Boolean);
-
-    projects.push({
-      id,
-      roleId,
-      title: nameNoExt,
-      status: "Active",
-      date: `${file.mtime.getFullYear()}-${String(file.mtime.getMonth() + 1).padStart(2, "0")}`,
-      summary: "Project document available — summary will be added.",
-      objective: "Objective will be added.",
-      context: "Context will be added.",
-      approach: "Approach will be added.",
-      result: "Result will be added.",
-      skills: [],
-      tools,
-      files: [
-        {
-          label: file.name,
-          type: toolMap[file.ext] || "File",
-          path: `/files/${roleId}/${id}/${file.name}`,
-        },
-      ],
-      _sourceFiles: [
-        {
-          src: file.path,
-          dest: join(root, "files", roleId, id, file.name),
-        },
-      ],
     });
   }
 
