@@ -301,7 +301,10 @@ const skillsOverrides = {
   "mustard-seed": ["Business planning", "Financial modelling", "Market research", "Strategic planning", "Pitch presentation", "Action planning", "Startup feasibility"],
   "meridian-digital-holding": ["Investment analysis", "Financial modelling", "Valuation", "Due diligence", "Pitch deck creation", "Report writing", "Market assessment"],
   "project-apex": ["Risk modelling", "Quantitative analysis", "Statistical analysis", "Monte Carlo simulation", "VaR calculation", "Data visualisation", "Portfolio risk assessment"],
-  "rip-2-report-copy": ["Academic writing", "Critical analysis", "Evidence evaluation", "Research methodology", "Literature review", "Structured argumentation", "Citation management"],
+  "project-pear": ["Quantitative analysis", "Financial modelling", "Statistical analysis", "Data visualisation", "Risk assessment", "Python programming", "Numerical methods"],
+  "python-charts": ["Data visualisation", "Python programming", "Chart design", "Statistical graphics", "Data analysis", "Exploratory analysis", "Presentation of data"],
+  "a-z": ["Business analysis", "Strategic diagnosis", "Financial analysis", "Executive writing", "Competitive analysis", "Report structuring", "Management recommendation"],
+  "the-brass-automaton": ["Business planning", "Financial modelling", "Market analysis", "Strategic planning", "Pitch presentation", "Action planning", "Creative industries analysis"],
 };
 
 const manualIds = new Set(manualProjects.map((p) => p.id));

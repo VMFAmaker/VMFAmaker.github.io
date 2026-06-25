@@ -1,5 +1,5 @@
 {
-  "portfolioPath": "../../Portfolio",
+  "portfolioPath": "C:/Users/virgi/OneDrive/Desktop/Portfolio",
   "ignore": ["Development Logs", "Logs", "Log", "_build", ".claude", "desktop.ini"],
   "map": {
     "Business management/Business Counselling": "business-counselling",
