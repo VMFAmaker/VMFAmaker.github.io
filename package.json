@@ -7,11 +7,14 @@
     "build": "node tools/sync.mjs && node tools/build-pdfs.mjs",
     "build-pdfs": "node tools/build-pdfs.mjs",
     "generate": "node tools/generate-pages.mjs",
+    "generate-descriptions": "node tools/generate-descriptions.mjs",
     "sync": "node tools/sync.mjs",
+    "publish": "node tools/auto-publish.mjs",
     "dev": "node server.mjs",
     "start": "node server.mjs"
   },
   "dependencies": {
-    "pdf-lib": "^1.17.1"
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.4.168"
   }
 }
