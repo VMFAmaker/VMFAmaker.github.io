@@ -292,9 +292,14 @@ function renderAbout() {
           `).join("")}
         </div>
       </article>
-      <article class="info-card">
+      <article class="info-card info-card-wide">
         <h2>Philosophy</h2>
-        <p>Philosophy will be added.</p>
+        <p>I test the water before I dive — but once I'm in, I do not come up for air until the work is done. What looks like caution is just discipline. What looks like confidence is just preparation meeting conviction.</p>
+        <p>You see what I let you see. Sociable, yes — but beneath it, quiet, measured, and deliberate. I choose openness because I can, not because I must. The surface invites; the depth delivers.</p>
+        <p>I do not work for money. I work for value — real, tangible, earned. A contract without substance is just paper. If my work carries weight, I expect it to be recognised. If it does not, I will be the first to say so.</p>
+        <p>You do not hire a profession when you hire me. You hire a person — with convictions, creativity, and limits I am not ashamed of. Christ comes first, then family, then the craft. This order is not a weakness; it is the foundation everything else stands on.</p>
+        <p>I have been underestimated more times than I can count. Each time, I became more than what was expected — sometimes to prove a point, sometimes simply because I could. History is built by those who refuse to stay where others placed them.</p>
+        <p>This portfolio is not decoration. It is evidence.</p>
       </article>
     </div>
   `);
