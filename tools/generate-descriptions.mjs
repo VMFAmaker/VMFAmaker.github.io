@@ -84,21 +84,25 @@ async function generateForProject(project, token) {
 
   if (combinedText.length < 50) return null;
 
-  const prompt = `Based on this project's documents, generate a JSON object with these fields:
-- "summary": 1-2 sentence project summary (what the project is and what it delivers)
-- "objective": 1 sentence stating the project's goal
-- "context": 1 sentence explaining the business/academic context
-- "approach": 1 sentence on methodology or tools used
-- "result": 1 sentence on what was produced or concluded
-- "skills": array of exactly 7 relevant professional skills demonstrated
+  const prompt = `You are writing portfolio descriptions for a professional BBA student's website. Read the document content carefully and write descriptions that reference SPECIFIC details from the actual work — names, figures, frameworks, industries, findings. NEVER write generic filler like "actionable recommendations for improving operational efficiency" or "set within the context of a competitive market." If the document mentions a company, name it. If it mentions a margin figure, quote it. If it uses a framework, say which one.
+
+Use British English throughout (analyse, organised, colour, labour, etc.).
+
+Generate a JSON object with these fields:
+- "summary": 2-3 sentences. What this project IS, what industry/company/topic it covers, and what it delivers. Be specific — mention the actual subject, not "a company" or "a business."
+- "objective": 2 sentences. What the project set out to achieve and why. Reference the actual problem or question from the document.
+- "context": 2-3 sentences. The real-world backdrop — what industry pressures, academic debates, or business situations motivated this work. Pull specific details from the document (market conditions, regulatory issues, competitive dynamics, etc.).
+- "approach": 2 sentences. What methods, frameworks, or tools were actually used. Name them (SWOT, DCF, Porter's Five Forces, Monte Carlo, etc.).
+- "result": 2 sentences. What was actually produced or concluded. If there are specific findings, recommendations, or figures, mention them. Do NOT say "actionable recommendations" without saying what they recommend.
+- "skills": array of exactly 7 specific professional skills demonstrated in this work
 
 Project title: "${project.title}"
 Role category: "${project.roleId}"
 
 Document content (excerpts):
-${combinedText.slice(0, 3000)}
+${combinedText.slice(0, 3500)}
 
-Return ONLY the JSON object.`;
+Return ONLY the JSON object, no markdown fences.`;
 
   const raw = await callGitHubModels(token, prompt);
   const cleaned = raw.replace(/^```json?\s*/i, "").replace(/\s*```$/i, "");
@@ -117,13 +121,15 @@ async function main() {
     return;
   }
 
-  console.log(`Processing ${projects.length} synced projects...\n`);
+  const forceAll = process.argv.includes("--force");
+  console.log(`Processing ${projects.length} synced projects...${forceAll ? " (force regenerate all)" : ""}\n`);
 
   let updated = 0;
   const updatedProjects = [];
 
   for (const project of projects) {
     const needsDescription =
+      forceAll ||
       project.summary === "Project documents available — summary will be added." ||
       !project.skills ||
       project.skills.length === 0;
@@ -136,6 +142,7 @@ async function main() {
 
     process.stdout.write(`  AI  ${project.title} ... `);
     try {
+      if (updated > 0) await new Promise((r) => setTimeout(r, 4500));
       const generated = await generateForProject(project, token);
       if (generated) {
         updatedProjects.push({

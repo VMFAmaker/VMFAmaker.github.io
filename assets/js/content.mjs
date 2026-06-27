@@ -293,26 +293,8 @@ try {
   // No synced projects yet — run `npm run sync` to generate
 }
 
-const skillsOverrides = {
-  "nicholas-cars": ["Business analysis", "Strategic diagnosis", "Financial analysis", "Executive writing", "Data analysis", "Competitive analysis", "Report structuring"],
-  "knowledgeable-new": ["Business planning", "Financial modelling", "Market analysis", "Strategic planning", "Pitch presentation", "Action planning", "Feasibility analysis"],
-  "knowledgeable-old": ["Business planning", "Financial modelling", "Market research", "Strategic thinking", "Pitch development", "Action planning", "Risk assessment"],
-  "layerstone": ["Business planning", "Financial modelling", "Market analysis", "Strategic planning", "Pitch presentation", "Action planning", "Competitive positioning"],
-  "mustard-seed": ["Business planning", "Financial modelling", "Market research", "Strategic planning", "Pitch presentation", "Action planning", "Startup feasibility"],
-  "meridian-digital-holding": ["Investment analysis", "Financial modelling", "Valuation", "Due diligence", "Pitch deck creation", "Report writing", "Market assessment"],
-  "project-apex": ["Risk modelling", "Quantitative analysis", "Statistical analysis", "Monte Carlo simulation", "VaR calculation", "Data visualisation", "Portfolio risk assessment"],
-  "project-pear": ["Quantitative analysis", "Financial modelling", "Statistical analysis", "Data visualisation", "Risk assessment", "Python programming", "Numerical methods"],
-  "python-charts": ["Data visualisation", "Python programming", "Chart design", "Statistical graphics", "Data analysis", "Exploratory analysis", "Presentation of data"],
-  "a-z": ["Business analysis", "Strategic diagnosis", "Financial analysis", "Executive writing", "Competitive analysis", "Report structuring", "Management recommendation"],
-  "the-brass-automaton": ["Business planning", "Financial modelling", "Market analysis", "Strategic planning", "Pitch presentation", "Action planning", "Creative industries analysis"],
-  "subconscious-learning": ["Academic writing", "Critical analysis", "Evidence evaluation", "Research methodology", "Literature review", "Structured argumentation", "Psychology research"],
-  "3d-printed-housing-in-uk": ["Academic writing", "Critical analysis", "Evidence evaluation", "Research methodology", "Policy analysis", "Construction technology", "Housing research"],
-};
-
 const manualIds = new Set(manualProjects.map((p) => p.id));
-const mergedSynced = syncedProjects
-  .filter((p) => !manualIds.has(p.id))
-  .map((p) => skillsOverrides[p.id] ? { ...p, skills: skillsOverrides[p.id] } : p);
+const mergedSynced = syncedProjects.filter((p) => !manualIds.has(p.id));
 export const projects = [...manualProjects, ...mergedSynced];
 
 export const thinkingEntries = [

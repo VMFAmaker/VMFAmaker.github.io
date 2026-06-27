@@ -87,7 +87,9 @@ try {
   }
 
   const tmpScript = join(tmpdir(), `convert-${Date.now()}.ps1`);
-  await writeFile(tmpScript, script, "utf8");
+  const bom = Buffer.from([0xEF, 0xBB, 0xBF]);
+  const content = Buffer.concat([bom, Buffer.from(script, "utf8")]);
+  await writeFile(tmpScript, content);
   try {
     execSync(`powershell -NonInteractive -ExecutionPolicy Bypass -File "${tmpScript}"`, {
       timeout: 120_000,
