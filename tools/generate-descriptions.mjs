@@ -40,11 +40,12 @@ async function findPdfs(dir) {
 }
 
 async function callGitHubModels(token, prompt) {
-  const res = await fetch("https://models.inference.ai.azure.com/chat/completions", {
+  const res = await fetch("https://api.githubcopilot.com/chat/completions", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
+      "Copilot-Integration-Id": "vscode-chat",
     },
     body: JSON.stringify({
       model: "gpt-4o-mini",
