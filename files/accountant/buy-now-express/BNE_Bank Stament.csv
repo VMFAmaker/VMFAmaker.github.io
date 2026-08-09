@@ -1,0 +1,88 @@
+Type,Account Ref,Nominal Code,Department,Date,Ref,Ex.Ref,Details,Net Amount,Tax Code,Tax Amount,Exchange Rate
+BR,1200,2300,0,01/03/2013,Investmen t,,Director investment,20000.0,T9,0.0,1
+BP,1200,2220,0,31/03/2013,Saif,,Wages,1500.0,T9,0.0,1
+BP,1200,7901,0,31/03/2013,Bank Charges,,Bank charges,3.5,T9,0.0,1
+BP,1200,2220,0,30/04/2013,Saif,,Wages,1500.0,T9,0.0,1
+BP,1200,7901,0,30/04/2013,Bank Charges,,Bank charges,3.5,T9,0.0,1
+BP,1200,2220,0,30/05/2013,Saif,,Wages,1500.0,T9,0.0,1
+BP,1200,2103,0,02/03/2013,Paypoint,,PayPoint payments,753.25,T9,0.0,1
+BP,1200,2103,0,04/03/2013,Paypoint .,,PayPoint control,795.32,T9,0.0,1
+BP,1200,2103,0,06/03/2013,Paypoint 1,,PayPoint payments,691.0,T9,0.0,1
+BP,1200,2103,0,06/03/2013,Paypoint 2,,PayPoint payments,575.5,T9,0.0,1
+BP,1200,2103,0,10/03/2013,Paypoint 3,,PayPoint payments,830.2,T9,0.0,1
+BP,1200,2103,0,11/03/2013,Paypoint 4,,PayPoint payments,77.46,T9,0.0,1
+BP,1200,2103,0,11/03/2013,Paypoint 5,,PayPoint payments,693.0,T9,0.0,1
+BP,1200,2103,0,11/03/2013,Paypoint 6,,PayPoint payments,522.0,T9,0.0,1
+BP,1200,2103,0,18/03/2013,Paypoint 7,,PayPoint payments,535.0,T9,0.0,1
+BP,1200,2103,0,18/03/2013,Paypoint 8,,PayPoint payments,723.0,T9,0.0,1
+BP,1200,2103,0,20/03/2013,Paypoint 9,,PayPoint payments,769.0,T9,0.0,1
+BP,1200,2103,0,21/03/2013,Paypoint 10,,PayPoint payments,632.5,T9,0.0,1
+BP,1200,2103,0,21/03/2013,Paypoint 11,,PayPoint payments,705.0,T9,0.0,1
+BP,1200,2103,0,22/03/2013,Paypoint 12,,PayPoint payments,799.0,T9,0.0,1
+BP,1200,2103,0,26/03/2013,Paypoint 13,,PayPoint payments,203.12,T9,0.0,1
+BP,1200,2103,0,28/03/2013,Paypoint 14,,PayPoint payments,614.5,T9,0.0,1
+BP,1200,2103,0,28/03/2013,Paypoint 15,,PayPoint payments,540.02,T9,0.0,1
+BP,1200,2103,0,29/03/2013,Paypoint 16,,PayPoint payments,811.47,T9,0.0,1
+BP,1200,2103,0,31/03/2013,Paypoint 17,,PayPoint payments,498.0,T9,0.0,1
+BP,1200,2103,0,01/04/2013,Paypoint 18,,PayPoint payments,705.0,T9,0.0,1
+BP,1200,2103,0,01/04/2013,Paypoint 19,,PayPoint payments,535.0,T9,0.0,1
+BP,1200,2103,0,01/04/2013,Paypoint 20,,PayPoint payments,723.9,T9,0.0,1
+BP,1200,2103,0,02/04/2013,Paypoint 21,,PayPoint payments,512.0,T9,0.0,1
+BP,1200,2103,0,02/04/2013,Paypoint 22,,PayPoint payments,728.5,T9,0.0,1
+BP,1200,2103,0,03/04/2013,Paypoint 23,,PayPoint payments,701.19,T9,0.0,1
+BP,1200,2103,0,04/04/2013,Paypoint 24,,PayPoint payments,694.0,T9,0.0,1
+BP,1200,2103,0,11/04/2013,Paypoint 25,,PayPoint payments,631.0,T9,0.0,1
+BP,1200,2103,0,13/04/2013,Paypoint 26,,PayPoint payments,617.0,T9,0.0,1
+BP,1200,2103,0,13/04/2013,Paypoint 27,,PayPoint payments,474.0,T9,0.0,1
+BP,1200,2103,0,15/04/2013,Paypoint 28,,PayPoint payments,519.0,T9,0.0,1
+BP,1200,2103,0,24/04/2013,Paypoint 29,,PayPoint payments,634.43,T9,0.0,1
+BP,1200,2103,0,24/04/2013,Paypoint 30,,PayPoint payments,512.0,T9,0.0,1
+BP,1200,2103,0,24/04/2013,Paypoint 31,,PayPoint payments,457.0,T9,0.0,1
+BP,1200,2103,0,25/04/2013,Paypoint 32,,PayPoint payments,370.0,T9,0.0,1
+BP,1200,2103,0,30/04/2013,Paypoint 33,,PayPoint payments,408.1,T9,0.0,1
+BP,1200,2103,0,05/05/2013,Paypoint 34,,PayPoint payments,330.0,T9,0.0,1
+BP,1200,2103,0,05/05/2013,Paypoint 35,,PayPoint payments,303.0,T9,0.0,1
+BP,1200,2103,0,08/05/2013,Paypoint 36,,PayPoint payments,343.0,T9,0.0,1
+BP,1200,2103,0,11/05/2013,Paypoint 37,,PayPoint payments,497.0,T9,0.0,1
+BP,1200,2103,0,11/05/2013,Paypoint 38,,PayPoint payments,483.0,T9,0.0,1
+BP,1200,2103,0,11/05/2013,Paypoint 39,,PayPoint payments,420.0,T9,0.0,1
+BP,1200,2103,0,12/05/2013,Paypoint 40,,PayPoint payments,215.44,T9,0.0,1
+BP,1200,2103,0,14/05/2013,Paypoint 41,,PayPoint payments,519.5,T9,0.0,1
+BP,1200,2103,0,16/05/2013,Paypoint 42,,PayPoint payments,364.0,T9,0.0,1
+BP,1200,2103,0,20/05/2013,Paypoint 43,,PayPoint payments,335.0,T9,0.0,1
+BP,1200,2103,0,20/05/2013,Paypoint 44,,PayPoint payments,388.0,T9,0.0,1
+BP,1200,2103,0,26/05/2013,Paypoint 45,,PayPoint payments,220.0,T9,0.0,1
+BP,1200,2103,0,26/05/2013,Paypoint 46,,PayPoint payments,417.0,T9,0.0,1
+BP,1200,2103,0,29/05/2013,Paypoint 47,,PayPoint payments,359.0,T9,0.0,1
+BP,1200,2103,0,29/05/2013,Paypoint 48,,PayPoint payments,200.0,T9,0.0,1
+BR,1200,2103,0,02/03/2013,PayPoint.1,,Paypoint receipts,2290.0,T9,0.0,1
+BR,1200,2103,0,17/03/2013,PayPoint.2,,Paypoint receipts,110.0,T9,0.0,1
+BR,1200,2103,0,18/03/2013,PayPoint.3,,Paypoint receipts,290.0,T9,0.0,1
+BR,1200,2103,0,20/03/2013,PayPoint.4,,Paypoint receipts,405.0,T9,0.0,1
+BR,1200,2103,0,21/03/2013,PayPoint.5,,Paypoint receipts,410.0,T9,0.0,1
+BR,1200,2103,0,22/03/2013,PayPoint.6,,Paypoint receipts,270.0,T9,0.0,1
+BR,1200,2103,0,29/03/2013,PayPoint.7,,Paypoint receipts,360.0,T9,0.0,1
+BR,1200,2103,0,30/03/2013,PayPoint.8,,Paypoint receipts,270.0,T9,0.0,1
+BR,1200,2103,0,31/03/2013,PayPoint.9,,Paypoint receipts,1635.0,T9,0.0,1
+BR,1200,2103,0,01/04/2013,PayPoint.1 0,,Paypoint receipts,1865.0,T9,0.0,1
+BR,1200,2103,0,01/04/2013,PayPoint.1 1,,Paypoint receipts,1315.0,T9,0.0,1
+BR,1200,2103,0,10/04/2013,PayPoint.1 2,,Paypoint receipts,650.0,T9,0.0,1
+BR,1200,2103,0,10/04/2013,PayPoint.1 3,,Paypoint receipts,250.0,T9,0.0,1
+BR,1200,2103,0,11/04/2013,PayPoint.1 4,,Paypoint receipts,1330.0,T9,0.0,1
+BR,1200,2103,0,12/04/2013,PayPoint.1 5,,Paypoint receipts,770.0,T9,0.0,1
+BR,1200,2103,0,13/04/2013,PayPoint.1 6,,Paypoint receipts,2145.0,T9,0.0,1
+BR,1200,2103,0,14/04/2013,PayPoint.1 7,,Paypoint receipts,815.0,T9,0.0,1
+BR,1200,2103,0,15/04/2013,PayPoint.1 8,,Paypoint receipts,1050.0,T9,0.0,1
+BR,1200,2103,0,16/04/2013,PayPoint.1 9,,Paypoint receipts,365.0,T9,0.0,1
+BR,1200,2103,0,17/04/2013,PayPoint.2 0,,Paypoint receipts,1170.0,T9,0.0,1
+BR,1200,2103,0,18/04/2013,PayPoint.2 1,,Paypoint receipts,1400.0,T9,0.0,1
+BR,1200,2103,0,19/04/2013,PayPoint.2 2,,Paypoint receipts,1000.0,T9,0.0,1
+BR,1200,2103,0,20/04/2013,PayPoint.2 3,,Paypoint receipts,985.0,T9,0.0,1
+BR,1200,2103,0,21/04/2013,PayPoint.2 4,,Paypoint receipts,1135.0,T9,0.0,1
+BR,1200,2103,0,22/04/2013,PayPoint.2 5,,Paypoint receipts,1627.0,T9,0.0,1
+BR,1200,2103,0,23/04/2013,PayPoint.2 6,,Paypoint receipts,2035.0,T9,0.0,1
+BR,1200,2103,0,24/04/2013,Paypoint..,,Paypoint receipts,50.0,T9,0.0,1
+BR,1200,2103,0,24/04/2013,Paypoint,,Paypoint receipts,370.0,T9,0.0,1
+BR,1200,2103,0,25/04/2013,Paypoint,,Paypoint receipts,17.4,T9,0.0,1
+BR,1200,4900,0,31/05/2013,Bank Loyalty reward,,Bank interest received,1.5,T9,0.0,1
+BP,1200,7901,0,31/05/2013,Bank Charges,,Bank charges,3.5,T9,0.0,1
