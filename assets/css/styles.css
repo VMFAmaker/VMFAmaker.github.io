@@ -537,6 +537,15 @@ section + section {
   line-height: 1.75;
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--area-color, var(--teal));
+  font-size: 0.88rem;
+  word-break: break-all;
+}
+.project-link:hover { text-decoration: underline; }
+
 .area-meta {
   display: inline-flex;
   margin-top: 26px;

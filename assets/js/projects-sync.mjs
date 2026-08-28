@@ -777,6 +777,7 @@ export default [
     "title": "Agora Market Simulator",
     "status": "Active",
     "date": "2026-08",
+    "link": "https://vmfamaker.github.io/agora-market-simulator/",
     "summary": "The 'Agora Market Simulator' is an agent-based market simulation engine designed for quantitative analysis within the investment sector. It features a tick-by-tick limit order book populated by heterogeneous trading agents, aimed at facilitating learning and strategy analysis.",
     "objective": "This project aimed to develop a sophisticated simulation tool that could accurately model market dynamics and trading behaviours. The primary question addressed was how to effectively simulate various trading strategies and their impacts on market conditions.",
     "context": "The project was motivated by the increasing complexity of financial markets and the need for advanced tools to analyse trading strategies amidst volatile market conditions. The investment industry faces pressures from rapid technological advancements and the necessity for robust risk management frameworks.",

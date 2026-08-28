@@ -22,6 +22,18 @@ const app = document.querySelector("[data-app]");
 const HIDDEN_STATUSES = new Set(["Draft", "Planned"]);
 const visibleProjects = projects.filter((p) => !HIDDEN_STATUSES.has(p.status));
 
+function dailyFeatured(items, count) {
+  const today = new Date();
+  let seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+  const shuffled = [...items];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    seed = (seed * 16807 + 11) % 2147483647;
+    const j = seed % (i + 1);
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled.slice(0, count);
+}
+
 function getVisibleProjectsByRole(roleId) {
   return visibleProjects.filter((p) => p.roleId === roleId);
 }
@@ -243,7 +255,7 @@ function renderHome() {
     ${crossDivider()}
 
     ${visibleProjects.length > 0 ? `
-    <div class="project-grid">${visibleProjects.slice(0, 4).map(projectCard).join("")}</div>
+    <div class="project-grid">${dailyFeatured(visibleProjects, 4).map(projectCard).join("")}</div>
     ` : ""}
 
     ${scriptureBlock("home-bottom")}
@@ -291,15 +303,6 @@ function renderAbout() {
             </div>
           `).join("")}
         </div>
-      </article>
-      <article class="info-card info-card-wide">
-        <h2>Philosophy</h2>
-        <p>I test the water before I dive — but I always put the first foot in. What looks like caution is discipline. What looks like confidence is preparation meeting conviction. Once I am in, I do not come up for air until the work is done.</p>
-        <p>You see what I let you see. Sociable, yes — energetic, even reckless at first glance. But beneath it, quiet, measured, and deliberate. I choose openness because I can, not because I must. The surface invites; the depth delivers.</p>
-        <p>I do not work for money. I work for value — real, tangible, earned. A contract without substance is just paper. If my work carries weight, I expect it to be recognised. If yours does not, no document will make it so. We should return to a time when work spoke for itself.</p>
-        <p>You do not hire a profession when you hire me. You hire a person — with creativity, convictions, and limits I am not ashamed of. If I cannot deliver, I will tell you before you find out. Christ comes first, then family, then the craft. This order is not a weakness; it is the foundation everything else stands on.</p>
-        <p>I have been underestimated more times than I can count. Each time, I became more than what was expected — sometimes to prove a point, sometimes for the quiet satisfaction of it. History is not written by those who stayed where others placed them.</p>
-        <p>This portfolio is not decoration. It is evidence.</p>
       </article>
     </div>
   `);
@@ -423,6 +426,7 @@ function renderProject() {
         <section>
           <h2>Output / Result</h2>
           <p>${escapeHtml(project.result)}</p>
+          ${project.link ? `<a class="project-link" href="${escapeHtml(project.link)}" target="_blank">${escapeHtml(project.link)}</a>` : ""}
         </section>
       </div>
 
