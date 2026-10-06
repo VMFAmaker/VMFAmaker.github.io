@@ -6,16 +6,16 @@ export default [
     "title": "A-Z",
     "status": "Active",
     "date": "2026-01",
-    "summary": "The project 'A-Z' is a comprehensive business counselling analysis focused on A-Z Retail Group, examining its financial performance and competitive positioning within the retail industry. It delivers insights into revenue growth, operating margins, and market share against competitors like Walmart.",
-    "objective": "The project aimed to assess A-Z Retail Group's financial health and identify key drivers of revenue and margin growth. It sought to answer how the company could sustain its competitive advantage in a rapidly evolving retail landscape.",
-    "context": "A-Z Retail Group operates in a highly competitive retail environment, facing pressures from e-commerce giants and shifting consumer preferences. The analysis highlighted the company's projected revenue growth of 12.4% YoY, contrasting with Walmart's 4.6%, amidst challenges such as wage inflation and tariff headwinds.",
-    "approach": "The analysis utilised financial metrics and frameworks such as SWOT and margin decomposition to evaluate A-Z's performance. Key performance indicators included operating income, net sales, and advertising revenue, with a focus on identifying margin drivers and threats.",
-    "result": "The project concluded that A-Z Retail Group's operating margin is projected to increase from 4.0% in FY 2023 to 6.9% by FY 2025, driven by operational improvements and a shift in revenue mix. It identified a total revenue at risk of $68 billion, representing 9.5% of total revenue, primarily from competitive pressures in various product categories.",
+    "summary": "The 'A-Z' project is a comprehensive business counselling analysis focused on the A-Z Retail Group within the retail industry. It delivers a detailed financial summary and competitive landscape assessment, highlighting key metrics such as a projected revenue of $716.9 billion by FY 2025 and an operating margin increase to 6.9%.",
+    "objective": "This project aimed to evaluate A-Z Retail Group's financial performance and competitive positioning against major players like Walmart. The primary question addressed was how A-Z can sustain its growth and improve its operating margins in a challenging retail environment.",
+    "context": "The retail industry is currently facing pressures from e-commerce competition, particularly from platforms like Temu and Shein, which threaten traditional retail margins. Additionally, factors such as wage inflation and tariff headwinds are impacting operational costs, necessitating a strategic analysis of A-Z's market position.",
+    "approach": "The analysis employed frameworks such as SWOT for internal and external assessment and Porter's Five Forces to evaluate competitive dynamics. Financial metrics were scrutinised, including a year-on-year revenue growth of 12.4% and a margin decomposition analysis.",
+    "result": "The project concluded that A-Z Retail Group could achieve a 39.6% increase in operating income by FY 2025, driven by a shift in revenue mix and operational improvements. It also identified a total revenue at risk of $68 billion, representing 9.5% of total revenue due to competitive pricing pressures.",
     "skills": [
       "Financial Analysis",
       "Market Research",
-      "Data Interpretation",
       "Strategic Planning",
+      "Data Interpretation",
       "Competitive Analysis",
       "Report Writing",
       "Presentation Skills"
@@ -49,11 +49,11 @@ export default [
     "title": "Apex Networks",
     "status": "Active",
     "date": "2026-07",
-    "summary": "The project 'Apex Networks' focuses on the acquisition advisory for Apex Networks regarding the potential purchase of Pionear, a company specialising in digital asset payment infrastructure. The analysis delivers a comprehensive financial summary, including revenue projections and synergy models, to guide strategic decision-making.",
-    "objective": "The project aimed to assess whether Apex Networks should proceed with the acquisition of Pionear, evaluating the financial implications and strategic fit. The central question was whether the investment would yield a positive return or be classified as a liability.",
-    "context": "The digital payments industry is experiencing rapid growth, with Apex Networks facing increasing competition and regulatory challenges in integrating cryptocurrency solutions. The acquisition of Pionear, which offers a crypto-to-fiat bridge, is positioned against a backdrop of evolving market dynamics and the need for enhanced payment infrastructure.",
-    "approach": "The analysis employed financial metrics such as Net Present Value (NPV) and a synergy model using a MECE breakdown to identify potential cost and revenue synergies from the acquisition. Additionally, a cost-benefit analysis was conducted at different revenue multiples to evaluate the investment's viability.",
-    "result": "The findings indicated that the acquisition could generate cumulative synergies of up to US$421 million over three years, but the NPV analysis revealed a negative valuation of -US$2,076 million at a 10% discount rate, categorising the deal as a liability. The project concluded that while there are potential benefits, the financial risks outweigh the advantages.",
+    "summary": "The project 'Apex Networks' involves a comprehensive acquisition advisory analysis for Apex Networks regarding the potential acquisition of Pionear, a company specialising in digital asset payment infrastructure. This project delivers a detailed financial summary, synergy model, and cost-benefit analysis to inform the Board of Directors' decision-making process.",
+    "objective": "The project aimed to evaluate whether Apex Networks should proceed with the acquisition of Pionear, assessing the financial implications and strategic fit. It specifically sought to determine if the acquisition would be an investment or a liability based on projected synergies and costs.",
+    "context": "Apex Networks operates in the rapidly evolving digital payments industry, facing pressures from increasing competition and the need for regulatory alignment in digital asset transactions. The acquisition of Pionear, which offers a crypto-to-fiat bridge and stablecoin payments, is positioned within a market where digital asset payment infrastructure is becoming crucial for growth.",
+    "approach": "The analysis utilised frameworks such as SWOT for strategic evaluation and a detailed cost-benefit analysis to assess different acquisition price points. Additionally, a synergy model was developed to quantify potential cost and revenue synergies from the Pionear acquisition.",
+    "result": "The findings indicated that the acquisition could yield total synergies of up to $421 million over three years, with significant cost synergies from compliance consolidation and technology infrastructure. However, the net deal NPV analysis suggested a potential liability, with negative NPV figures at different revenue multiples, indicating caution in proceeding.",
     "skills": [
       "Financial Analysis",
       "Strategic Planning",
@@ -92,19 +92,19 @@ export default [
     "title": "LightWay",
     "status": "Active",
     "date": "2026-05",
-    "summary": "The 'LightWay' project involved a comprehensive business counselling analysis for LightWay Christian Resources, a company operating in the Christian publishing and retail sector in the United States. The project delivered insights into financial performance, revenue segmentation, and competitive positioning from FY 2022 to FY 2025.",
-    "objective": "This project aimed to assess the financial viability and strategic positioning of LightWay amidst declining retail revenues and increasing digital subscriptions. The primary question addressed was how to adapt the business model to sustain growth in a changing market landscape.",
-    "context": "LightWay faced significant challenges, including a 100% decline in retail revenue by FY 2025 and a competitive landscape dominated by major players like Amazon and RightNow Media. The shift towards digital resources and the need for a robust online presence were critical factors influencing this analysis.",
-    "approach": "The analysis employed financial metrics and frameworks such as SWOT analysis to evaluate LightWay's strengths, weaknesses, opportunities, and threats. Additionally, a competitive advantage assessment was conducted to compare LightWay's offerings against key competitors.",
-    "result": "The project concluded that LightWay's digital revenue is projected to grow by 77.1% by FY 2025, while overall revenue is expected to decline by 40.6%. Recommendations included enhancing digital subscriber engagement and leveraging theological vetting as a unique selling proposition.",
+    "summary": "The 'LightWay' project is a comprehensive business counselling analysis focused on LightWay Christian Resources, a company in the Christian publishing and retail industry. It delivers a detailed financial summary and competitive landscape assessment for the years 2022 to 2025, highlighting revenue trends and market positioning.",
+    "objective": "The project aimed to evaluate LightWay's financial performance and identify strategic opportunities to enhance its market presence. Specifically, it sought to address the declining revenue trends and the impact of digital transformation on the company's business model.",
+    "context": "LightWay operates in a challenging environment marked by significant shifts in consumer behaviour towards digital resources, leading to a decline in traditional retail revenues. The competitive landscape includes major players like Amazon and RightNow Media, which intensifies the need for LightWay to adapt its offerings and pricing strategies.",
+    "approach": "The analysis employed financial metrics and frameworks such as SWOT analysis and competitive advantage assessments to evaluate LightWay's market position against competitors. Additionally, revenue segment analysis was conducted to understand the performance across various revenue streams.",
+    "result": "The findings revealed a projected total revenue decline from $480 million in FY 2022 to $285 million in FY 2025, with a significant drop in retail revenue to zero. Recommendations included focusing on digital subscriber growth, with potential annual revenues of $16.5 million from the basic tier alone, and enhancing content depth to leverage competitive advantages.",
     "skills": [
       "Financial Analysis",
       "Market Research",
       "Strategic Planning",
-      "Data Interpretation",
       "Competitive Analysis",
+      "Data Interpretation",
       "Business Modelling",
-      "Report Writing"
+      "Presentation Skills"
     ],
     "tools": [
       "Excel",
@@ -135,19 +135,19 @@ export default [
     "title": "Navegador",
     "status": "Active",
     "date": "2026-06",
-    "summary": "The 'Navegador' project provides a comprehensive financial analysis of Navegador Airlines, focusing on its revenue streams, cost structures, and competitive positioning within the European airline industry. It delivers insights into the airline's financial performance from FY 2021 to FY 2025, highlighting key metrics such as gross margin and operating income.",
-    "objective": "This project aimed to assess Navegador Airlines' financial viability and identify areas for improvement in its operational strategy. The primary question addressed was how the airline could enhance its profitability amidst increasing competition and rising operational costs.",
-    "context": "The airline industry is currently facing significant challenges, including fluctuating fuel prices and intense competition from low-cost carriers like Ryanair and easyJet. Navegador Airlines, with a projected revenue of €3.6 billion and 15.5 million passengers, must navigate these pressures to maintain its market share and improve its financial health.",
-    "approach": "The analysis employed financial modelling techniques, including a detailed examination of revenue breakdowns and cost structures, alongside competitive benchmarking against major European airlines. Key frameworks used included SWOT analysis and Porter's Five Forces to evaluate the competitive landscape.",
-    "result": "The project concluded that Navegador Airlines could achieve a gross margin of 42.8% by FY 2023, with recommendations to optimise its route network and reduce operating costs, particularly in fuel and staff expenses. The analysis indicated a potential operating income of €653 million in FY 2023, showcasing the airline's path to profitability.",
+    "summary": "The 'Navegador' project provides a comprehensive financial analysis of Navegador Airlines, focusing on its revenue streams and operational performance from FY 2021 to FY 2025. It delivers insights into passenger revenue, cargo operations, and cost structures within the airline industry.",
+    "objective": "This project aimed to evaluate Navegador Airlines' financial health and identify key growth areas amidst a challenging aviation landscape. The primary question addressed was how to enhance profitability while managing rising operational costs.",
+    "context": "The airline industry has faced significant pressures due to fluctuating fuel prices and increased competition from low-cost carriers. Navegador Airlines' performance was benchmarked against major European airlines, revealing a need for strategic adjustments to maintain market share and improve gross margins.",
+    "approach": "The analysis employed financial metrics such as EBITDA margins and gross profit calculations, alongside competitive benchmarking against industry peers like Ryanair and easyJet. A detailed examination of revenue sources, including long-haul and short-haul passenger segments, was conducted using SWOT analysis.",
+    "result": "The project concluded that Navegador Airlines achieved a gross margin of 42.8% in FY 2023, with total revenue projected to reach €3.55 billion by FY 2025. Recommendations included optimising the route network to enhance load factors and yield per passenger.",
     "skills": [
       "Financial Analysis",
       "Data Interpretation",
-      "Strategic Planning",
       "Market Research",
-      "Competitive Analysis",
-      "Cost Management",
-      "Business Modelling"
+      "Strategic Planning",
+      "Benchmarking",
+      "SWOT Analysis",
+      "Report Writing"
     ],
     "tools": [
       "Excel",
@@ -178,19 +178,19 @@ export default [
     "title": "Navegador Investment",
     "status": "Active",
     "date": "2026-06",
-    "summary": "The 'Navegador Investment' project provides a comprehensive financial analysis of Navegador Airlines, focusing on its revenue, operating costs, and profitability metrics from FY 2021 to FY 2024. The project delivers insights into the airline's financial health and potential future scenarios based on ownership structures and corruption costs.",
-    "objective": "The project aimed to evaluate Navegador Airlines' financial performance and assess the impact of different ownership scenarios on its valuation. It specifically sought to address the question of how varying levels of foreign ownership could influence the airline's EBITDA margins and overall economic impact.",
-    "context": "Navegador Airlines operates within a challenging aviation industry marked by fluctuating demand and regulatory scrutiny. The analysis was motivated by the airline's recent financial struggles, including a net income loss of EUR 1,230 million in FY 2021, and the need for strategic restructuring to enhance profitability and operational efficiency.",
-    "approach": "The project utilised a combination of financial modelling techniques, including scenario analysis and valuation metrics such as EV/EBITDA multiples. Additionally, a corruption cost analysis was conducted to quantify the financial impact of governance issues on the airline's valuation.",
-    "result": "The findings indicated that under a strategic minimum foreign ownership scenario, Navegador Airlines could achieve an EBITDA of EUR 459 million by Year 5, with a valuation increase to EUR 2,524 million. The analysis also highlighted a potential valuation loss due to corruption costs, which could significantly impact the airline's financial outlook.",
+    "summary": "The 'Navegador Investment' project provides a comprehensive financial analysis of Navegador Airlines, focusing on its performance metrics from FY 2021 to FY 2024. It delivers insights into revenue growth, operating costs, and profitability, highlighting key financial figures such as an EBITDA margin of 13.9% in FY 2023.",
+    "objective": "This project aimed to evaluate the financial viability of Navegador Airlines amidst fluctuating market conditions and to assess the impact of ownership structures on its valuation. The central question was how different ownership scenarios could affect the airline's EBITDA and overall financial health.",
+    "context": "The airline industry is currently facing significant challenges, including rising operating costs and competitive pressures, particularly in the wake of the COVID-19 pandemic. Navegador Airlines has experienced a volatile financial trajectory, with a net income of EUR 165 million in FY 2023 after previous losses, necessitating a thorough analysis of its operational and financial strategies.",
+    "approach": "The analysis employed various financial frameworks, including a scenario analysis for ownership structures and a corruption cost analysis to quantify potential revenue leakage. Additionally, a benchmarking approach was used to assess the airline's performance against industry standards.",
+    "result": "The project concluded that under a balanced ownership scenario (49% foreign ownership), Navegador Airlines could achieve an EBITDA of EUR 497 million by Year 5, with a valuation increase to EUR 3,002 million. Furthermore, it identified a potential valuation loss of up to EUR 1.5 billion due to corruption-related inefficiencies.",
     "skills": [
       "Financial Analysis",
-      "Scenario Modelling",
-      "Valuation Techniques",
+      "Scenario Planning",
+      "Benchmarking",
       "Data Interpretation",
-      "Strategic Planning",
+      "Strategic Recommendations",
       "Market Research",
-      "Risk Assessment"
+      "Quantitative Modelling"
     ],
     "tools": [
       "Excel",
@@ -221,18 +221,18 @@ export default [
     "title": "Nicholas Cars",
     "status": "Active",
     "date": "2026-03",
-    "summary": "The project 'Nicholas Cars' is a comprehensive business counselling analysis focused on the automated electric vehicle industry, specifically examining Nicholas Cars Inc. It delivers insights into financial performance, market dynamics, and strategic challenges faced by the company from FY2023 to Q1 FY2026.",
-    "objective": "The project aimed to analyse the significant decline in vehicle deliveries and European registrations, which dropped by 27.8% in FY2025. It sought to understand the underlying causes, including brand destruction linked to CEO political activity, and to propose strategies for recovery.",
-    "context": "The automotive industry is currently facing intense competition, particularly from leading Chinese competitors who are experiencing growth in electric vehicle deliveries. Nicholas Cars has seen a concerning decline in market share, with European registrations plummeting by as much as 67% in key markets like the Netherlands, amidst a backdrop of regulatory pressures and shifting consumer preferences.",
-    "approach": "The analysis employed frameworks such as SWOT to identify strengths, weaknesses, opportunities, and threats, alongside financial metrics to evaluate performance. Additionally, Porter's Five Forces was utilised to assess competitive dynamics within the electric vehicle market.",
-    "result": "The project concluded that Nicholas Cars must address brand perception issues and improve operational efficiencies to regain market share. Key findings included a 10% decline in automotive revenue and a critical need to enhance gross margins, which were reported at 20.1% for FY2025, compared to 22% for competitors.",
+    "summary": "The 'Nicholas Cars' project is a comprehensive analysis of Nicholas Cars Inc., focusing on its performance in the automated electric vehicle industry from FY2023 to Q1 FY2026. The project delivers insights into revenue trends, market share, and competitive dynamics, highlighting significant challenges and opportunities within the sector.",
+    "objective": "The project aimed to assess the impact of brand reputation on sales and market performance, particularly following a decline in European registrations by 27.8% in FY2025. It sought to understand the underlying factors contributing to this decline and propose strategic responses.",
+    "context": "The automotive industry is facing intense competitive pressure, particularly from leading Chinese competitors who have captured a significant market share with a 28% growth in deliveries. Additionally, Nicholas Cars experienced a substantial drop in vehicle deliveries by 8.6% and a notable decline in European registrations, with Germany seeing a decrease of 48%.",
+    "approach": "The analysis employed a combination of financial metrics and market benchmarking, utilising frameworks such as SWOT analysis to evaluate strengths, weaknesses, opportunities, and threats. It also included a detailed examination of gross and operating margins to assess financial health.",
+    "result": "The project concluded that Nicholas Cars' operating margin fell from 9.2% to 6.2%, primarily due to competitive pressures and a decline in automotive revenue. Recommendations included enhancing brand management strategies to mitigate the impact of negative public perception, which previously cost the company between $1.0 to $1.26 million in sales.",
     "skills": [
       "Financial Analysis",
       "Market Research",
       "Strategic Planning",
       "Data Interpretation",
       "SWOT Analysis",
-      "Competitive Analysis",
+      "Competitive Benchmarking",
       "Report Writing"
     ],
     "tools": [
@@ -264,19 +264,19 @@ export default [
     "title": "Pionear",
     "status": "Active",
     "date": "2026-07",
-    "summary": "The 'Pionear' project is an M&A advisory analysis focusing on the cross-border payments platform Pionear, which operates in over 190 countries. It evaluates strategic options for the company in light of acquisition interest from Apex Networks, delivering a comprehensive financial and strategic overview.",
-    "objective": "The project aimed to determine whether Pionear should pursue a sale, merger, or remain independent in response to Apex Networks' acquisition interest. It specifically addressed the challenges of growth ceilings, customer concentration risks, and regulatory complexities.",
-    "context": "Pionear is navigating a competitive landscape in the fintech industry, facing pressures from rapid growth and regulatory challenges across multiple jurisdictions. The recent acquisition of BUMK by Apex Networks indicates a potential shift in market dynamics, prompting Pionear to reassess its strategic positioning.",
-    "approach": "The analysis utilised financial metrics such as revenue projections, gross margins, and EBITDA margins, alongside a scenario analysis framework to assess the implications of different strategic options. Additionally, comparable M&A transactions were reviewed to inform valuation estimates.",
-    "result": "The project concluded that Pionear could achieve an implied enterprise value ranging from US$5.1 billion to US$12.75 billion based on various revenue multiples. It highlighted the need for strategic decision-making to mitigate customer concentration risks and navigate regulatory complexities effectively.",
+    "summary": "The 'Pionear' project is a comprehensive M&A advisory analysis for Pionear, a cross-border payments platform operating in over 190 countries. It evaluates strategic scenarios in response to acquisition interest from Apex Networks, delivering insights on potential growth and market positioning.",
+    "objective": "The project aimed to determine whether Pionear should sell, merge, or remain independent amidst acquisition interest. It specifically addressed the challenges of growth ceilings, customer concentration risks, and regulatory complexities.",
+    "context": "Pionear operates in the competitive fintech industry, facing pressures from rapid technological advancements and regulatory complexities across 190 jurisdictions. The recent acquisition of BUMK by Apex Networks highlighted the potential for strategic mergers in the sector, prompting a need for Pionear to evaluate its market position.",
+    "approach": "The analysis utilised frameworks such as SWOT to assess Pionear's strengths and weaknesses, alongside financial projections and comparable M&A transaction analyses to estimate valuation. It also considered Porter's Five Forces to evaluate competitive dynamics in the fintech landscape.",
+    "result": "The project concluded that Pionear's implied enterprise value could range from US$5.1 billion to US$12.75 billion based on various revenue multiples. Additionally, it identified key risks, including a growth ceiling and customer concentration, which could impact future strategic decisions.",
     "skills": [
       "Financial Analysis",
+      "M&A Advisory",
       "Strategic Planning",
-      "Valuation Techniques",
       "Market Research",
-      "Regulatory Compliance",
+      "Valuation Modelling",
       "Risk Assessment",
-      "Presentation Skills"
+      "Regulatory Analysis"
     ],
     "tools": [
       "Excel",
@@ -307,19 +307,19 @@ export default [
     "title": "Doce Perdição",
     "status": "Active",
     "date": "2026-01",
-    "summary": "The 'Doce Perdição' project is a comprehensive action plan for launching a Portuguese bakery in Epsom, with a focus on expansion into London by June 2026. It outlines the necessary steps for establishing the business, including securing a lease, formalising supplier agreements, and ensuring compliance with food safety regulations.",
-    "objective": "This project aimed to create a structured pre-launch plan that ensures all foundational tasks are completed before the bakery's soft launch. The primary question addressed was how to effectively prepare for the operational and regulatory requirements of opening a new food establishment.",
-    "context": "The bakery industry faces increasing competition and regulatory scrutiny, particularly in food safety and hygiene standards. The project was motivated by the need to navigate these challenges while establishing a unique offering in the Epsom area, capitalising on the growing demand for authentic Portuguese cuisine.",
-    "approach": "The project utilised a detailed task management framework to organise activities across the pre-launch phase, ensuring all legal and operational requirements were met. Tools such as the HACCP food safety management system and project timelines were employed to maintain compliance and efficiency.",
-    "result": "The action plan resulted in a clear roadmap for the bakery's launch, detailing tasks such as securing a premises licence and formalising supplier agreements with Doce Perdição bakery. Specific recommendations included obtaining food hygiene certifications for all staff and establishing a comprehensive cleaning schedule.",
+    "summary": "The 'Doce Perdição' project is a comprehensive action plan for launching a Portuguese-themed bakery in Epsom, with a focus on expanding to London by June 2026. It outlines the necessary steps for establishing the business, including securing a lease, formalising agreements, and preparing for a soft launch.",
+    "objective": "This project aimed to create a detailed roadmap for the successful launch of Doce Perdição, addressing the need for a structured approach to business setup. The primary question was how to effectively manage the pre-launch phase to ensure all foundational tasks were completed before opening.",
+    "context": "The bakery industry is currently experiencing increased competition and evolving consumer preferences towards artisanal and culturally diverse food offerings. Regulatory requirements, such as food hygiene registration and licensing for alcohol service, add complexity to the launch process, necessitating thorough planning.",
+    "approach": "The project employed a phased approach, detailing tasks across a three-month pre-launch timeline. Key frameworks included a project management timeline and compliance checklists for food safety, leveraging the Food Standards Agency's Safer Food Better Business template for HACCP documentation.",
+    "result": "The action plan produced a structured timeline with specific tasks, such as signing a lease and applying for necessary licenses, ensuring readiness for a soft launch. It concluded that all staff must complete Level 2 Food Hygiene Certificates prior to opening, and a commercial waste collection contract must be arranged.",
     "skills": [
       "Project Management",
+      "Business Planning",
       "Regulatory Compliance",
       "Market Research",
-      "Stakeholder Engagement",
       "Financial Planning",
-      "Food Safety Management",
-      "Digital Marketing"
+      "Stakeholder Engagement",
+      "Food Safety Management"
     ],
     "tools": [
       "Word",
@@ -350,24 +350,72 @@ export default [
     ]
   },
   {
+    "id": "glitterbolt-roller-club",
+    "roleId": "business-plans",
+    "title": "Glitterbolt Roller Club",
+    "status": "Active",
+    "date": "2026-10",
+    "summary": "The Glitterbolt Roller Club Action Plan outlines a comprehensive strategy for launching a roller skating club in Epsom, focusing on community engagement and event management. It details a step-by-step approach to establish the club, from securing venues to marketing efforts, aimed at attracting local skaters.",
+    "objective": "The project aimed to create a viable business plan for the Glitterbolt Roller Club, addressing the challenge of attracting initial membership and securing suitable venues. It sought to validate the concept through a pilot programme while minimising financial risk.",
+    "context": "The roller skating industry has seen a resurgence in popularity, particularly among younger demographics seeking recreational activities. This project was motivated by the need to navigate competitive dynamics and ensure compliance with local venue regulations while managing operational costs effectively.",
+    "approach": "The plan employed a structured decision-gate framework to evaluate progress at each phase, ensuring that no financial commitments were made without prior validation. Additionally, it included market research techniques such as competitor analysis and venue suitability assessments.",
+    "result": "The project concluded with a detailed action plan for the first 11 weeks leading up to the pilot launch, including tasks such as securing hall bookings and obtaining insurance quotes. It identified a target of selling 25 Founding Skater Passes and securing a venue at £75 per hour or less.",
+    "skills": [
+      "Project Management",
+      "Market Research",
+      "Financial Analysis",
+      "Strategic Planning",
+      "Risk Management",
+      "Communication",
+      "Social Media Marketing"
+    ],
+    "tools": [
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "files": [
+      {
+        "label": "Glitterbolt Roller Club Action Plan.docx",
+        "type": "Word",
+        "path": "/files/business-plans/glitterbolt-roller-club/Glitterbolt Roller Club Action Plan.docx"
+      },
+      {
+        "label": "Glitterbolt Roller Club Business Plan.docx",
+        "type": "Word",
+        "path": "/files/business-plans/glitterbolt-roller-club/Glitterbolt Roller Club Business Plan.docx"
+      },
+      {
+        "label": "Glitterbolt Roller Club Financial Model.xlsx",
+        "type": "Excel",
+        "path": "/files/business-plans/glitterbolt-roller-club/Glitterbolt Roller Club Financial Model.xlsx"
+      },
+      {
+        "label": "Glitterbolt Roller Club Pitch Deck.pptx",
+        "type": "PowerPoint",
+        "path": "/files/business-plans/glitterbolt-roller-club/Glitterbolt Roller Club Pitch Deck.pptx"
+      }
+    ]
+  },
+  {
     "id": "knowledgeable-new",
     "roleId": "business-plans",
     "title": "Knowledgeable (NEW)",
     "status": "Active",
     "date": "2026-04",
-    "summary": "The 'Knowledgeable' project is a comprehensive action plan for a subconscious learning platform aimed at university students in the UK. It focuses on developing a mobile application that leverages open access academic content to enhance student engagement and retention.",
-    "objective": "The project aimed to determine whether users would return to the app after their initial visit, addressing the critical question of user retention. Achieving a 30-day retention rate above 30% was essential before further investment in growth.",
-    "context": "The project is set against a backdrop of increasing competition in the educational technology sector, where user engagement is paramount. With a focus on university students, the project responds to pressures for innovative learning solutions that cater to modern educational needs.",
-    "approach": "The project employed a phased approach, beginning with a closed beta to gather user feedback and engagement metrics. Key methods included user interviews, daily engagement monitoring, and a retention analysis to assess user behaviour.",
-    "result": "The action plan outlined specific targets, including recruiting 200 to 500 beta users and achieving an average session length of over 10 minutes. A decision gate was established to proceed to the next phase only if retention exceeded 25% and average session length surpassed 8 minutes.",
+    "summary": "The 'Knowledgeable' project is an action plan for a subconscious learning platform targeting university students in the UK. It aims to establish a closed beta phase to assess user engagement and retention metrics, specifically focusing on session length and user return rates.",
+    "objective": "The project set out to determine whether users would return to the app after their initial visit, addressing the critical question of user retention. Achieving a 30-day retention rate above 30% was essential before further investment in growth.",
+    "context": "The project is situated within the competitive landscape of educational technology, where platforms must demonstrate user engagement to secure funding and scale. With increasing demand for innovative learning solutions among students, the need for effective user retention strategies is paramount.",
+    "approach": "The project utilised a structured pre-launch checklist to ensure all foundational elements were in place, including GDPR compliance and content licensing. It employed user engagement metrics such as Daily Active Users (DAU) and session length to evaluate the app's performance during the closed beta phase.",
+    "result": "The project concluded that a successful beta phase would require a minimum of 200 to 500 users and aimed for an average session length of 10 minutes. A decision gate was established to proceed to the next phase only if retention exceeded 25% and average session length surpassed 8 minutes.",
     "skills": [
       "Project Management",
       "User Engagement Analysis",
-      "Content Curation",
-      "Technical Development",
+      "Content Strategy",
       "Data Analytics",
-      "User Research",
-      "Marketing Strategy"
+      "Technical Development",
+      "Market Research",
+      "Stakeholder Communication"
     ],
     "tools": [
       "Word",
@@ -403,19 +451,19 @@ export default [
     "title": "Knowledgeable (OLD)",
     "status": "Active",
     "date": "2026-04",
-    "summary": "The 'Knowledgeable' project is an educational media platform designed to provide GCSE and A-Level revision resources, including guides, flashcards, and skills courses. It aims to support students in subjects such as Maths, English, Biology, Chemistry, and Physics, with a focus on media literacy and academic simplification.",
-    "objective": "The project aimed to create a comprehensive action plan for launching the 'Knowledgeable' platform, addressing the need for accessible educational resources in the UK. It sought to establish a viable business model while ensuring a robust content offering for students.",
-    "context": "The educational sector in the UK faces increasing demand for online learning resources, especially in light of recent shifts towards digital education. Regulatory considerations, such as data protection compliance, and the competitive landscape of online tutoring and revision platforms, further motivated the development of this project.",
-    "approach": "The project utilised a structured action plan framework, incorporating a pre-launch checklist and phased implementation strategy. Key methods included content planning, platform development, and testing of payment systems to ensure a seamless user experience.",
-    "result": "The project produced a detailed roadmap for launching the platform, including the commissioning of 50 GCSE revision guides and the creation of 20 digital flashcards. It also established a subscription model with pricing set at £10/month for skills courses and £8/month for video content.",
+    "summary": "The 'Knowledgeable' project is an educational media platform designed to provide GCSE and A-Level revision resources, including guides, flashcards, and skills courses. It aims to enhance academic performance through accessible digital content tailored for students in the UK education system.",
+    "objective": "This project set out to create a comprehensive action plan for launching an educational platform that addresses the need for effective study resources in the UK. The primary question was how to efficiently build and launch the platform while ensuring quality content and user engagement.",
+    "context": "The UK education sector faces increasing demands for digital learning resources, particularly in light of recent shifts towards online education. The competitive landscape includes established platforms, necessitating a strategic approach to content creation and user acquisition.",
+    "approach": "The project employed a structured action plan divided into phases, utilising a pre-launch checklist and a build phase to ensure systematic development. Key frameworks included a content management workflow for freelance contributors and a subscription pricing model for users.",
+    "result": "The project concluded with a detailed roadmap that included commissioning 50 GCSE revision guides and 15 skills courses, with an estimated content production cost of £3,000 to £5,000. Additionally, a subscription system was proposed, charging £10 per month for skills courses and £8 for video content.",
     "skills": [
       "Project Management",
       "Content Development",
       "Market Research",
-      "Financial Planning",
+      "Budgeting",
       "Digital Marketing",
-      "Data Protection Compliance",
-      "User Experience Design"
+      "Strategic Planning",
+      "Stakeholder Engagement"
     ],
     "tools": [
       "Word",
@@ -451,18 +499,18 @@ export default [
     "title": "Layerstone",
     "status": "Active",
     "date": "2025-10",
-    "summary": "The Layerstone project is a comprehensive action plan for establishing a 3D printed housing social enterprise in London and Birmingham. It outlines a step-by-step roadmap for building affordable housing, focusing on partnerships, site acquisition, and tenant validation.",
-    "objective": "The project aimed to address the urgent housing crisis in the UK by creating a sustainable model for 3D printed homes. It sought to explore the feasibility of a social enterprise structure and identify potential partnerships and funding sources.",
-    "context": "The UK housing market faces significant pressures, with a severe shortage of affordable homes exacerbated by rising construction costs and regulatory challenges. Local councils, particularly in boroughs like Barking & Dagenham, Croydon, and Enfield, are under pressure to meet housing targets while innovating solutions to address this crisis.",
-    "approach": "The project employed a phased approach, including a pre-launch checklist and a detailed timeline for each development phase. Key frameworks used included stakeholder analysis for partnership development and a risk management plan to address potential challenges.",
-    "result": "The action plan produced a detailed timeline for implementation, including key milestones and budget estimates ranging from £500 to £10,000 for legal and registration costs. It also identified three boroughs for initial focus, with recommendations for engaging local councils and securing land for development.",
+    "summary": "The Layerstone project is a comprehensive action plan for establishing a 3D printed housing social enterprise in London and Birmingham. It outlines a step-by-step roadmap for launching the initiative, focusing on addressing the severe housing crisis through innovative construction methods.",
+    "objective": "The project aimed to create a viable social enterprise that leverages 3D printing technology to provide affordable housing solutions. It sought to identify and engage with local councils and technology partners to facilitate the development of housing in areas with high demand.",
+    "context": "The UK housing market is under significant pressure, with many boroughs facing severe housing shortages, particularly in areas like Barking & Dagenham, Croydon, and Enfield. Regulatory challenges and the need for innovative solutions have prompted the exploration of 3D printing as a means to expedite construction and reduce costs.",
+    "approach": "The project employed a structured action plan divided into phases, including a pre-launch checklist and partnership outreach. It utilised frameworks such as SWOT analysis to assess potential partnerships and local council engagement strategies.",
+    "result": "The action plan produced a detailed timeline for implementation, including key milestones and budget estimates ranging from £500 to £10,000 depending on the chosen legal structure. It identified three boroughs for initial engagement and outlined a strategy for securing technology partnerships to support the enterprise.",
     "skills": [
       "Project Management",
       "Strategic Planning",
-      "Stakeholder Engagement",
       "Market Research",
-      "Risk Analysis",
-      "Financial Planning",
+      "Stakeholder Engagement",
+      "Budgeting",
+      "Risk Assessment",
       "Digital Marketing"
     ],
     "tools": [
@@ -498,20 +546,20 @@ export default [
     "roleId": "business-plans",
     "title": "Mustard Seed",
     "status": "Active",
-    "date": "2026-07",
-    "summary": "The 'Mustard Seed' project is an action plan and implementation roadmap designed for launching a consulting business focused on providing business health diagnostics and training services. It outlines a structured approach for a solo founder to build the business from scratch, targeting small to medium enterprises (SMEs) within faith-based networks.",
-    "objective": "This project aimed to establish a viable consulting business by generating initial revenue through fee-based services and securing the first portfolio company. The primary question addressed was how to effectively launch and scale the business within the first year.",
-    "context": "The project is set against a backdrop of increasing competition in the consulting industry, particularly for SMEs seeking tailored business solutions. Additionally, the need for structured support in the faith-based business community highlighted a gap in the market that this initiative seeks to fill.",
-    "approach": "The action plan employs a phased approach, detailing specific activities across four key phases: Foundation, First Clients, Prove the Model, and Scale. Tools such as a business health assessment template and a portfolio company selection scorecard were developed to facilitate the consulting process.",
-    "result": "The project produced a comprehensive roadmap that includes a pre-launch checklist, budget and spending timeline, and a risk register. Key milestones were established to ensure the business could generate cash flow immediately and sign its first portfolio company within the first three months.",
+    "date": "2026-08",
+    "summary": "The 'Mustard Seed' project is a comprehensive action plan for launching a consulting business focused on providing business health diagnostics and training services. It outlines a structured roadmap for establishing the business from scratch, targeting faith-based organisations and small to medium enterprises (SMEs). The plan includes detailed phases for client acquisition, revenue generation, and scaling operations.",
+    "objective": "This project aimed to create a step-by-step guide for launching the Mustard Seed consulting business, addressing the challenge of generating initial revenue and securing the first portfolio company. The goal was to establish a sustainable model for consulting services within a defined timeframe.",
+    "context": "The project was motivated by the need for new consulting firms to navigate a competitive landscape while addressing the specific needs of faith-based organisations and SMEs. Market conditions indicated a growing demand for tailored business support services, particularly in the wake of economic challenges faced by small businesses. Regulatory considerations included compliance with HMRC and data protection requirements.",
+    "approach": "The action plan employed a phased approach, breaking down the launch process into distinct stages, including a pre-launch checklist and specific milestones for each phase. Tools such as a business health assessment template and a portfolio company selection scorecard were developed to facilitate client onboarding and service delivery.",
+    "result": "The project produced a detailed implementation roadmap that includes a pre-launch checklist, a budget and spending timeline, and a risk register. Key findings highlighted the importance of immediate cash flow generation through fee-based services, with specific actions outlined for securing the first clients and establishing a referral pipeline.",
     "skills": [
       "Project Management",
+      "Business Analysis",
       "Strategic Planning",
-      "Market Research",
-      "Financial Analysis",
-      "Business Development",
-      "Risk Management",
-      "Networking"
+      "Financial Forecasting",
+      "Client Relationship Management",
+      "Risk Assessment",
+      "Marketing Strategy"
     ],
     "tools": [
       "Word",
@@ -547,19 +595,19 @@ export default [
     "title": "The Brass Automaton",
     "status": "Active",
     "date": "2026-06",
-    "summary": "The Brass Automaton is a comprehensive action plan for launching a steampunk-themed bar in Shoreditch, London. This project outlines the necessary steps for setting up the venue, including securing licenses, hiring staff, and ordering robotic bartender units.",
-    "objective": "The project aimed to establish a timeline and checklist for the pre-launch phase of The Brass Automaton. Specifically, it sought to ensure all necessary licenses and venue preparations were completed by the end of Month 4.",
-    "context": "The hospitality industry in London faces increasing competition and regulatory requirements, particularly regarding alcohol licensing and health regulations. The project was motivated by the need to navigate these challenges while creating a unique customer experience in a vibrant area like Shoreditch.",
-    "approach": "The project utilised a structured pre-launch checklist to organise tasks and timelines effectively. Key frameworks included a phased approach to setup and a decision gate system to assess progress at the end of each phase.",
-    "result": "The action plan concluded with a clear timeline for completing all necessary preparations by Month 4, including the approval of all licenses and the delivery of robotic units. By the end of this phase, the venue is expected to be ready for a soft launch, contingent on meeting all outlined milestones.",
+    "summary": "The Brass Automaton is a detailed action plan for launching a steampunk-themed bar in Shoreditch, London. This project outlines the necessary steps for establishing the venue, including securing licenses, hiring staff, and setting up operations with robotic bartenders.",
+    "objective": "The project aimed to create a comprehensive pre-launch checklist to ensure all operational aspects were addressed before opening. It specifically sought to manage the complexities of licensing and venue fitout within a four-month timeframe.",
+    "context": "The hospitality industry in London faces significant regulatory challenges, particularly regarding licensing for alcohol and late-night refreshment. The competitive dynamics in Shoreditch necessitate a unique offering, such as the incorporation of robotic bartenders, to attract customers in a saturated market.",
+    "approach": "The project utilised a structured action plan framework to organise tasks and timelines effectively. Key milestones were established, including the application for various licenses and the coordination of venue fitout and staff recruitment.",
+    "result": "The action plan concluded with a decision gate at the end of Month 4, indicating a green status for proceeding to Phase 2, contingent on all licenses being approved and the fitout on schedule. Specific tasks included the ordering of two robotic bartender units and the commissioning of custom steampunk casings.",
     "skills": [
       "Project Management",
       "Strategic Planning",
-      "Time Management",
       "Regulatory Compliance",
       "Stakeholder Engagement",
-      "Budgeting",
-      "Marketing Strategy"
+      "Operational Coordination",
+      "Brand Development",
+      "Financial Planning"
     ],
     "tools": [
       "Word",
@@ -595,18 +643,18 @@ export default [
     "title": "Project PKMN Homestead",
     "status": "Active",
     "date": "2026-07",
-    "summary": "Project PKMN Homestead is a strategic analysis focused on the feasibility of civilian life and enterprise within the Pokémon world, specifically examining nine regions including Kanto and Johto. The project delivers insights on optimal living conditions and business opportunities for ordinary individuals in this unique universe.",
-    "objective": "The project aimed to determine the best regions for ordinary individuals to reside in the Pokémon world, considering factors such as safety, cost, and culture. Additionally, it sought to identify viable business opportunities for non-trainers in this setting.",
-    "context": "The analysis was motivated by the resolved crises in the Pokémon world, allowing for a contemporary evaluation of living conditions across regions. Factors such as economic opportunity, climate suitability, and community culture were critical in assessing the viability of civilian life.",
-    "approach": "The project employed a multi-faceted evaluation framework, analysing regions based on weighted criteria such as safety, affordability, and cultural warmth. Additionally, it utilised a scoring system to rank regions and assess potential business tracks.",
-    "result": "The findings indicated that Johto ranked highest in terms of safety and community warmth, while regions like Unova presented challenges due to lower scores in affordability and culture. Recommendations included exploring general consumer businesses and Pokémon-related enterprises tailored to local conditions.",
+    "summary": "Project PKMN Homestead is a strategic analysis focused on the feasibility of civilian life and enterprise within the Pokémon world, specifically evaluating living conditions across nine regions. The project delivers insights on safety, economic opportunity, and cultural fit for ordinary individuals seeking to integrate into this universe.",
+    "objective": "The project aimed to determine optimal living locations and business opportunities for non-trainers in the Pokémon world. It sought to address the question of where an ordinary person could thrive and what type of business they could establish.",
+    "context": "The analysis was motivated by the resolved crises in the Pokémon world, allowing for a contemporary assessment of living conditions. The project considered various factors such as safety, affordability, climate, and community culture, which are crucial for potential residents and entrepreneurs.",
+    "approach": "The project employed a multi-faceted evaluation framework, assessing regions based on weighted criteria including safety, economic opportunity, and cultural warmth. Additionally, it utilised a scoring system to rank the nine core regions for living and business potential.",
+    "result": "The findings indicated that regions like Johto and Kanto ranked highest for safety and cultural warmth, making them ideal for civilian life. Recommendations included establishing a general consumer business or a Pokémon-related venture tailored to the unique characteristics of each region.",
     "skills": [
       "Strategic analysis",
       "Market research",
       "Data interpretation",
-      "Quantitative analysis",
-      "Business modelling",
-      "Cultural assessment",
+      "Framework application",
+      "Business feasibility assessment",
+      "Cultural analysis",
       "Report writing"
     ],
     "tools": [
@@ -638,18 +686,18 @@ export default [
     "title": "Buy Now Express",
     "status": "Active",
     "date": "2026-08",
-    "summary": "The 'Buy Now Express' project involved the financial reconciliation of VAT returns for Buy Now Express Ltd, focusing on the first quarter of 2013. It utilised Sage 50 software to ensure accurate reporting of output VAT, input VAT, net sales, and net purchases, delivering precise financial data for compliance and operational insights.",
-    "objective": "The project aimed to accurately reconcile VAT returns to ensure compliance with HMRC regulations and to provide a clear financial picture for the company. It specifically addressed discrepancies in VAT reporting and the correct categorisation of transactions within the Sage 50 system.",
-    "context": "The retail industry faced increasing scrutiny from tax authorities, necessitating meticulous financial reporting and compliance with VAT regulations. Buy Now Express Ltd operated under a standard VAT scheme, which required detailed tracking of sales and purchases to avoid penalties and ensure accurate tax submissions.",
-    "approach": "The project employed the Sage 50 accounting software for data import and reconciliation processes, focusing on the audit trail and VAT return. Specific methodologies included the categorisation of transactions as per VAT requirements and the exclusion of cancelled transactions to maintain data integrity.",
-    "result": "The reconciliation confirmed output VAT of £13,857.42 and input VAT of £2,056.92, aligning perfectly with the VAT return requirements. Additionally, net sales were reported at £134,335.42 and net purchases at £29,369.34, providing a comprehensive financial overview for the quarter.",
+    "summary": "The 'Buy Now Express' project involved the financial management and accounting processes of Buy Now Express Ltd, focusing on supplier and customer transactions using Sage 50. It delivered a comprehensive analysis of purchase invoices, credits, and sales reports within the retail industry.",
+    "objective": "The project aimed to streamline the accounting processes by accurately recording and categorising purchase invoices and sales transactions. It sought to address discrepancies in VAT reporting and improve financial oversight for the company.",
+    "context": "The retail industry faces increasing pressure to maintain accurate financial records amidst regulatory scrutiny and competitive dynamics. Buy Now Express Ltd needed to enhance its accounting practices to ensure compliance with VAT regulations and improve operational efficiency.",
+    "approach": "The project utilised Sage 50 for financial data management and analysis, employing a structured approach to categorise transactions by account references and nominal codes. It included the application of VAT reporting frameworks to ensure compliance and accuracy in financial statements.",
+    "result": "The project produced a detailed record of purchase invoices, with a total input VAT of £2,056.92 documented across various suppliers, including Bestway and LIDL. Additionally, it established a clear categorisation of sales and purchase transactions, facilitating better financial reporting and oversight.",
     "skills": [
-      "Financial reconciliation",
+      "Financial analysis",
+      "Data management",
+      "Accounting software proficiency",
       "VAT compliance",
-      "Data analysis",
-      "Sage 50 proficiency",
       "Transaction categorisation",
-      "Attention to detail",
+      "Reporting and documentation",
       "Problem-solving"
     ],
     "tools": [
@@ -699,7 +747,7 @@ export default [
     "roleId": "accountant",
     "title": "Future Connect",
     "status": "Active",
-    "date": "2026-06",
+    "date": "2026-08",
     "summary": "Project documents available — summary will be added.",
     "objective": "Objective will be added.",
     "context": "Context will be added.",
@@ -729,24 +777,229 @@ export default [
     ]
   },
   {
+    "id": "la-studio",
+    "roleId": "accountant",
+    "title": "LA Studio",
+    "status": "Active",
+    "date": "2026-09",
+    "summary": "Project documents available — summary will be added.",
+    "objective": "Objective will be added.",
+    "context": "Context will be added.",
+    "approach": "Approach will be added.",
+    "result": "Result will be added.",
+    "skills": [],
+    "tools": [
+      "Excel",
+      "PDF"
+    ],
+    "files": [
+      {
+        "label": "Chart of Accounts (Updated).csv",
+        "type": "Excel",
+        "path": "/files/accountant/la-studio/Chart of Accounts (Updated).csv"
+      },
+      {
+        "label": "QuickBooks LA Studio (Jan-Mar 2025).,.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/la-studio/QuickBooks LA Studio (Jan-Mar 2025).,.pdf"
+      },
+      {
+        "label": "VAT Detail.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/la-studio/VAT Detail.pdf"
+      },
+      {
+        "label": "VAT Summary.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/la-studio/VAT Summary.pdf"
+      }
+    ]
+  },
+  {
+    "id": "retail-electric-sage",
+    "roleId": "accountant",
+    "title": "Retail Electric (Sage)",
+    "status": "Active",
+    "date": "2026-08",
+    "summary": "The project involved the preparation of the Q1 financial records for Retail Electric Ltd. using Sage 50, focusing on VAT returns and transaction reconciliation. It delivered a comprehensive import workbook that accurately reflects the company's financial activities for the period of January to March 2024.",
+    "objective": "The project aimed to ensure accurate VAT reporting under the flat rate scheme of 6.5% and to reconcile all transactions against source documents. It specifically addressed discrepancies in customer names and missing invoices that could affect financial accuracy.",
+    "context": "Retail Electric operates in a competitive retail energy market, which necessitates precise financial reporting and compliance with VAT regulations. The project was motivated by the need to maintain accurate financial records amidst the complexities of VAT schemes and transaction management.",
+    "approach": "The project utilised the Sage 50 accounting software to import and reconcile data from the Q1 source documents, including an Audit Trail and VAT Return. Key methodologies included transaction mapping and reconciliation techniques to ensure accuracy in financial reporting.",
+    "result": "The final output included a detailed import workbook that confirmed a gross sales turnover of £66,589.95 and a flat-rate VAT due of £4,328.50. Additionally, the project highlighted the need to fill in five missing customer names to complete the records accurately.",
+    "skills": [
+      "Financial Analysis",
+      "Data Reconciliation",
+      "VAT Compliance",
+      "Accounting Software Proficiency",
+      "Transaction Mapping",
+      "Attention to Detail",
+      "Problem Solving"
+    ],
+    "tools": [
+      "PDF",
+      "Excel"
+    ],
+    "files": [
+      {
+        "label": "RE AUDIT Q2 - sage.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/retail-electric-sage/RE AUDIT Q2 - sage.pdf"
+      },
+      {
+        "label": "RE Audit Q3 - sage.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/retail-electric-sage/RE Audit Q3 - sage.pdf"
+      },
+      {
+        "label": "RE Audit Trail Q1.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/retail-electric-sage/RE Audit Trail Q1.pdf"
+      },
+      {
+        "label": "RE VAT Return Q1.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/retail-electric-sage/RE VAT Return Q1.pdf"
+      },
+      {
+        "label": "RE VATRET Q2 - sage.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/retail-electric-sage/RE VATRET Q2 - sage.pdf"
+      },
+      {
+        "label": "RE VATRET Q3 - Sage.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/retail-electric-sage/RE VATRET Q3 - Sage.pdf"
+      },
+      {
+        "label": "Retail Electric Q1 - Sage 50.xlsx",
+        "type": "Excel",
+        "path": "/files/accountant/retail-electric-sage/Retail Electric Q1 - Sage 50.xlsx"
+      },
+      {
+        "label": "Retail Electric Q2 - Sage 50.xlsx",
+        "type": "Excel",
+        "path": "/files/accountant/retail-electric-sage/Retail Electric Q2 - Sage 50.xlsx"
+      },
+      {
+        "label": "Retail Electric Q3 - Sage 50.xlsx",
+        "type": "Excel",
+        "path": "/files/accountant/retail-electric-sage/Retail Electric Q3 - Sage 50.xlsx"
+      }
+    ]
+  },
+  {
+    "id": "retail-electric-xero",
+    "roleId": "accountant",
+    "title": "Retail Electric (Xero)",
+    "status": "Active",
+    "date": "2026-08",
+    "summary": "This project involved the financial reconciliation of Retail Electric Ltd's bank and petty cash accounts for Q1 2017, utilising Xero accounting software. It delivered a validated overview of transactions, ensuring accuracy in financial reporting and alignment with Sage figures.",
+    "objective": "The project aimed to reconcile the bank and petty cash accounts to ensure accurate financial records for Retail Electric Ltd. It specifically addressed discrepancies in the February petty cash records and aimed to confirm the total spend of £1,255.66.",
+    "context": "Retail Electric Ltd operates in the competitive retail electric industry, where accurate financial management is crucial for operational success. The project was motivated by the need to address inconsistencies in financial records and ensure compliance with accounting standards.",
+    "approach": "The reconciliation process involved validating 170 bank lines and 52 petty cash lines using Xero's import functionality. A detailed analysis was conducted to resolve discrepancies in the February petty cash totals, employing a systematic approach to transaction verification.",
+    "result": "The project concluded with a validated bank balance of £39,515.46 and confirmed petty cash spend of £1,255.66, aligning with Sage records. It identified an inconsistency in February's petty cash records, recommending a review of the source data for accuracy.",
+    "skills": [
+      "Financial Reconciliation",
+      "Data Analysis",
+      "Accounting Software Proficiency",
+      "Attention to Detail",
+      "Problem Solving",
+      "Reporting",
+      "Transaction Verification"
+    ],
+    "tools": [
+      "Excel",
+      "PDF"
+    ],
+    "files": [
+      {
+        "label": "Retail Electric - Xero Bank & Petty Cash (Q1).xlsx",
+        "type": "Excel",
+        "path": "/files/accountant/retail-electric-xero/Retail Electric - Xero Bank & Petty Cash (Q1).xlsx"
+      },
+      {
+        "label": "Retail Electric - Xero Bank & Petty Cash (Q3).xlsx",
+        "type": "Excel",
+        "path": "/files/accountant/retail-electric-xero/Retail Electric - Xero Bank & Petty Cash (Q3).xlsx"
+      },
+      {
+        "label": "Retail Electric - Xero.xlsx",
+        "type": "Excel",
+        "path": "/files/accountant/retail-electric-xero/Retail Electric - Xero.xlsx"
+      },
+      {
+        "label": "Xero - Retail Electric Ltd (Q3).pdf",
+        "type": "PDF",
+        "path": "/files/accountant/retail-electric-xero/Xero - Retail Electric Ltd (Q3).pdf"
+      }
+    ]
+  },
+  {
+    "id": "sports-direct",
+    "roleId": "accountant",
+    "title": "Sports Direct",
+    "status": "Active",
+    "date": "2026-09",
+    "summary": "The project involved a detailed Excel analysis and Sage 50 posting for Sports Direct (UK) Ltd, focusing on the quarter ending 31 January 2023. It delivered comprehensive sales and purchase analyses, including VAT returns and bank reconciliations, specifically for online retail transactions via Amazon.",
+    "objective": "The project aimed to accurately analyse sales and purchase data to ensure compliance with VAT regulations and to streamline financial reporting processes. It addressed discrepancies in transaction types and ensured correct VAT calculations for the period.",
+    "context": "The online retail industry faces increasing scrutiny regarding VAT compliance, particularly for businesses operating on platforms like Amazon. This project was motivated by the need to reconcile financial records accurately amid complex transaction types and regulatory requirements.",
+    "approach": "The analysis utilised Excel for creating pivot tables and live formulas, alongside Sage 50 for posting transactions. Key frameworks included the Sales Day Book and Purchase Day Book for systematic tracking of sales and purchases.",
+    "result": "The project successfully reconciled VAT returns, reporting Box 1 VAT on sales at £101.54 and Box 4 VAT reclaimed at £2,284.31. It also corrected transaction errors, ensuring all records aligned with the VAT return and audit trail.",
+    "skills": [
+      "Data analysis",
+      "Financial reporting",
+      "Excel proficiency",
+      "Sage 50 expertise",
+      "VAT compliance",
+      "Transaction reconciliation",
+      "Problem-solving"
+    ],
+    "tools": [
+      "PDF",
+      "Excel"
+    ],
+    "files": [
+      {
+        "label": "Sports Direct Audit Trail.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/sports-direct/Sports Direct Audit Trail.pdf"
+      },
+      {
+        "label": "Sports Direct UK - Excel Analysis.xlsx",
+        "type": "Excel",
+        "path": "/files/accountant/sports-direct/Sports Direct UK - Excel Analysis.xlsx"
+      },
+      {
+        "label": "Sports Direct VAT Detailed Report.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/sports-direct/Sports Direct VAT Detailed Report.pdf"
+      },
+      {
+        "label": "Sports Direct VAT Return.pdf",
+        "type": "PDF",
+        "path": "/files/accountant/sports-direct/Sports Direct VAT Return.pdf"
+      }
+    ]
+  },
+  {
     "id": "harbourne-retail",
     "roleId": "corporate-finance",
     "title": "Harbourne Retail",
     "status": "Active",
-    "date": "2026-06",
-    "summary": "The 'Harbourne Retail' project is a capital appraisal report proposing a £6.75 million investment to open 15 new urban convenience stores across England. The project aims to leverage strong unit economics and favourable demand trends in the convenience retail sector, delivering a projected net present value of approximately £9.2 million.",
-    "objective": "The project aimed to assess the viability of expanding Harbourne Retail Group's footprint in urban areas where convenience provision is limited. It sought to determine whether the investment would meet the group's hurdle rate of 8% and provide a robust return on investment.",
-    "context": "The UK convenience retail market has experienced consistent growth due to structural changes such as smaller households and an ageing population, which favour frequent top-up shopping. However, the competitive landscape is challenging, with aggressive expansion from discounters and rising labour costs in city centres impacting margin assumptions.",
-    "approach": "The analysis employed a financial model to calculate net present value (NPV) and internal rate of return (IRR), alongside a phased rollout strategy to validate assumptions. The report also considered various scenarios, including base, upside, and downside cases, to assess the project's resilience under different market conditions.",
-    "result": "The project concluded with a recommendation for approval based on a base case NPV of £9.2 million and an IRR of approximately 28%, significantly exceeding the hurdle rate. It also suggested a phased rollout of five stores initially to mitigate risk and validate assumptions before full commitment.",
+    "date": "2026-10",
+    "summary": "The 'Harbourne Retail' project involves a capital appraisal for a £6.75 million investment to establish 15 new urban convenience stores across England. This initiative targets densely populated areas with limited convenience options, leveraging strong unit economics and favourable demand trends in the convenience retail sector.",
+    "objective": "The project aimed to assess the viability of expanding Harbourne Retail Group's footprint in the urban convenience market. It specifically sought to determine whether the proposed investment would yield a satisfactory net present value and internal rate of return.",
+    "context": "The UK convenience retail market has experienced consistent growth due to structural changes such as smaller households and an ageing population, which favour frequent top-up shopping. However, the competitive landscape includes aggressive expansion by discount retailers and rising labour costs in urban centres, which pose challenges to margin assumptions.",
+    "approach": "The analysis employed a financial model to evaluate the project's net present value (NPV) and internal rate of return (IRR), alongside a phased rollout strategy to validate assumptions. The model also considered various scenarios, including base, upside, and downside cases, to assess the project's robustness under different market conditions.",
+    "result": "The project is projected to deliver a net present value of approximately £9.2 million and an internal rate of return of around 28%, with a payback period of four to five years. The report recommends a phased rollout, starting with five stores, to mitigate risks and validate the investment assumptions.",
     "skills": [
-      "Financial modelling",
-      "Investment appraisal",
-      "Market analysis",
-      "Risk assessment",
-      "Strategic planning",
-      "Data interpretation",
-      "Report writing"
+      "Financial Modelling",
+      "Capital Appraisal",
+      "Market Analysis",
+      "Investment Strategy",
+      "Risk Assessment",
+      "Scenario Planning",
+      "Data Interpretation"
     ],
     "tools": [
       "Word",
@@ -772,25 +1025,88 @@ export default [
     ]
   },
   {
+    "id": "harbourne-retail-v-2",
+    "roleId": "corporate-finance",
+    "title": "Harbourne Retail V",
+    "status": "Active",
+    "date": "2026-10",
+    "summary": "The 'Harbourne Retail V' project is a capital appraisal report for the Harbourne Retail Group, focusing on the investment case for fifteen urban convenience stores originally associated with Tesco. It delivers a comprehensive financial analysis, including revenue projections, cost assessments, and risk evaluations.",
+    "objective": "The project aimed to assess the viability of the proposed investment in urban convenience stores by analysing key financial metrics and potential risks. It sought to answer whether the investment would meet the required hurdle rate and deliver satisfactory returns.",
+    "context": "The retail industry is currently facing intense competition and evolving consumer preferences, particularly in urban areas where convenience shopping is on the rise. This project was motivated by the need for Harbourne Retail Group to strategically position itself in a market increasingly dominated by established players like Tesco.",
+    "approach": "The analysis employed financial frameworks such as scenario analysis and sensitivity analysis to evaluate different investment outcomes. Additionally, a break-even analysis was conducted to determine the viability of the investment under varying market conditions.",
+    "result": "The project concluded that the investment in the fifteen convenience stores could yield a positive net present value under the base case scenario, with a projected internal rate of return exceeding the hurdle rate. Specific recommendations included implementing robust risk management strategies to mitigate identified financial risks.",
+    "skills": [
+      "Financial analysis",
+      "Risk assessment",
+      "Scenario modelling",
+      "Sensitivity analysis",
+      "Investment appraisal",
+      "Market analysis",
+      "Strategic planning"
+    ],
+    "tools": [
+      "Word",
+      "Excel",
+      "PowerPoint",
+      "Image"
+    ],
+    "files": [
+      {
+        "label": "Harbourne Retail - Capital Appraisal Report.docx",
+        "type": "Word",
+        "path": "/files/corporate-finance/harbourne-retail-v-2/Harbourne Retail - Capital Appraisal Report.docx"
+      },
+      {
+        "label": "Harbourne Retail - Financial Model.xlsx",
+        "type": "Excel",
+        "path": "/files/corporate-finance/harbourne-retail-v-2/Harbourne Retail - Financial Model.xlsx"
+      },
+      {
+        "label": "Harbourne Retail - Management Presentation.pptx",
+        "type": "PowerPoint",
+        "path": "/files/corporate-finance/harbourne-retail-v-2/Harbourne Retail - Management Presentation.pptx"
+      },
+      {
+        "label": "Visual 1 - Free cash flow by year.png",
+        "type": "Image",
+        "path": "/files/corporate-finance/harbourne-retail-v-2/Visual 1 - Free cash flow by year.png"
+      },
+      {
+        "label": "Visual 2 - NPV sensitivity.png",
+        "type": "Image",
+        "path": "/files/corporate-finance/harbourne-retail-v-2/Visual 2 - NPV sensitivity.png"
+      },
+      {
+        "label": "Visual 3 - Scenario comparison.png",
+        "type": "Image",
+        "path": "/files/corporate-finance/harbourne-retail-v-2/Visual 3 - Scenario comparison.png"
+      },
+      {
+        "label": "Visual 4 - NPV against discount rate.png",
+        "type": "Image",
+        "path": "/files/corporate-finance/harbourne-retail-v-2/Visual 4 - NPV against discount rate.png"
+      }
+    ]
+  },
+  {
     "id": "agora-market-simulator",
     "roleId": "investment",
     "title": "Agora Market Simulator",
     "status": "Active",
-    "date": "2026-08",
-    "link": "https://vmfamaker.github.io/agora-market-simulator/",
+    "date": "2026-09",
     "summary": "The 'Agora Market Simulator' is an agent-based market simulation engine designed for quantitative analysis within the investment sector. It features a tick-by-tick limit order book populated by heterogeneous trading agents, aimed at facilitating learning and strategy analysis.",
-    "objective": "This project aimed to develop a sophisticated simulation tool that could accurately model market dynamics and trading behaviours. The primary question addressed was how to effectively simulate various trading strategies and their impacts on market conditions.",
-    "context": "The project was motivated by the increasing complexity of financial markets and the need for advanced tools to analyse trading strategies amidst volatile market conditions. The investment industry faces pressures from rapid technological advancements and the necessity for robust risk management frameworks.",
-    "approach": "The design utilised an agent-based modelling approach, incorporating frameworks such as the Avellaneda and Stoikov model for market making. Additionally, a detailed system architecture was developed to support the simulation's core functionalities, including a matching engine and agent archetypes.",
-    "result": "The project produced a comprehensive architecture and design specification for the Agora simulator, detailing the functionalities of various agent types, including noise traders and momentum traders. It concluded with a foundational framework for future strategy analysis and performance evaluation in simulated market environments.",
+    "objective": "This project aimed to develop a robust simulation engine to analyse trading behaviours and strategies in financial markets. The primary question addressed was how to effectively model diverse trading agents and their interactions within a market environment.",
+    "context": "The project is situated within the context of increasing complexity in financial markets, where traditional models struggle to capture the dynamics of heterogeneous trading behaviours. The need for advanced simulation tools has been driven by the demand for better understanding of market mechanisms and agent interactions, particularly in light of recent market volatility.",
+    "approach": "The design employed an agent-based modelling approach, utilising frameworks such as the Avellaneda and Stoikov model for market makers. Key components included a matching engine and a detailed agent framework to simulate various trading archetypes, including noise traders and momentum traders.",
+    "result": "The project produced a comprehensive architecture and design specification for the Agora Market Simulator, detailing the core data model and order lifecycle management. It concluded with a functional prototype capable of simulating diverse trading strategies and their impact on market dynamics.",
     "skills": [
       "Quantitative analysis",
       "Agent-based modelling",
-      "System architecture design",
-      "Market simulation",
-      "Trading strategy evaluation",
-      "Mathematical modelling",
-      "Risk management"
+      "Market simulation design",
+      "Data modelling",
+      "Algorithm development",
+      "Financial strategy analysis",
+      "Technical documentation"
     ],
     "tools": [
       "Word"
@@ -800,6 +1116,16 @@ export default [
         "label": "Agora - Architecture and Design Specification.docx",
         "type": "Word",
         "path": "/files/investment/agora-market-simulator/Agora - Architecture and Design Specification.docx"
+      },
+      {
+        "label": "Agora - Development Log.docx",
+        "type": "Word",
+        "path": "/files/investment/agora-market-simulator/Agora - Development Log.docx"
+      },
+      {
+        "label": "Agora - Strategy Research.docx",
+        "type": "Word",
+        "path": "/files/investment/agora-market-simulator/Agora - Strategy Research.docx"
       }
     ]
   },
@@ -809,19 +1135,19 @@ export default [
     "title": "Investment Strategies Analysis",
     "status": "Active",
     "date": "2026-08",
-    "summary": "The 'Investment Strategies Analysis' project evaluates various investment strategies, including Value Investing by Benjamin Graham and Growth Investing by Philip Fisher, within the finance industry. It delivers a comparative analysis of net returns, volatility, and Sharpe ratios for each strategy, providing insights for investors.",
-    "objective": "The project aimed to determine the effectiveness of different investment strategies in terms of net returns and risk management. It sought to answer which strategies yield the highest returns with acceptable volatility levels.",
-    "context": "The finance industry is currently facing challenges such as market volatility and changing investor preferences, which necessitate a thorough analysis of investment strategies. The project was motivated by the need for investors to optimise their portfolios in a competitive market environment.",
-    "approach": "The analysis employed quantitative methods to compare the net returns and volatility of various investment strategies, utilising metrics such as the Sharpe ratio. Frameworks like SWOT analysis were also considered to evaluate the strengths and weaknesses of each strategy.",
-    "result": "The findings revealed that Growth Investing yielded the highest net return at 12.1% with a volatility of 20.0%, while Day Trading showed a negative return of -3.0%. The analysis concluded that traditional strategies like Value Investing remain robust despite market fluctuations.",
+    "summary": "The 'Investment Strategies Analysis' project evaluates various investment strategies including Value Investing by Benjamin Graham and Growth Investing by Philip Fisher, focusing on their net returns, volatility, and Sharpe ratios. This analysis delivers insights into the performance metrics of different investment approaches within the finance industry.",
+    "objective": "The project aimed to assess the effectiveness of multiple investment strategies to determine which provides the best risk-adjusted returns. It specifically sought to answer how these strategies compare in terms of net return and volatility.",
+    "context": "The finance industry is currently facing pressures from market volatility and changing investor preferences, necessitating a thorough understanding of investment strategies. The analysis is set against a backdrop of increasing interest in both traditional and modern investment approaches, as investors seek optimal returns in uncertain economic conditions.",
+    "approach": "The project employed quantitative analysis to compare investment strategies using metrics such as net return, volatility, and Sharpe ratio. Frameworks like the Sharpe Ratio and various performance indicators were utilised to evaluate the effectiveness of each strategy.",
+    "result": "The findings revealed that Growth Investing yielded the highest net return at 12.1% with a volatility of 20.0%, while Day Trading resulted in a negative return of -3.0%. Recommendations included prioritising strategies with higher Sharpe ratios for better risk-adjusted performance, such as Value Investing and Growth Investing.",
     "skills": [
-      "Data Analysis",
-      "Financial Modelling",
-      "Investment Research",
-      "Risk Assessment",
-      "Quantitative Analysis",
-      "Strategic Planning",
-      "Report Writing"
+      "Quantitative analysis",
+      "Financial modelling",
+      "Data interpretation",
+      "Investment strategy evaluation",
+      "Risk assessment",
+      "Performance metrics analysis",
+      "Report writing"
     ],
     "tools": [
       "Image",
@@ -884,19 +1210,19 @@ export default [
     "title": "Meridian Digital Holding",
     "status": "Active",
     "date": "2026-06",
-    "summary": "The project focuses on an investment analysis of Meridian Digital Holdings (MDH), a major player in the digital technology sector. It delivers a detailed financial model and valuation insights, projecting total revenue growth from $198.3 billion in FY2022 to $427.3 billion by FY2029.",
-    "objective": "The project aimed to assess the financial viability of investing in Meridian Digital Holdings by analysing its revenue growth and profitability metrics. It specifically sought to answer how the company's financial performance would evolve in the context of increasing competition and technological advancements.",
-    "context": "The digital technology industry is experiencing rapid growth, driven by advancements in artificial intelligence and cloud computing. Meridian Digital Holdings faces pressures from competitors and market dynamics, with a projected revenue increase of 15.6% in FY2024 and a gross margin improvement from 68.4% in FY2022 to 69.4% in FY2024.",
-    "approach": "The analysis employed a Discounted Cash Flow (DCF) model to evaluate the company's future cash flows and terminal value. Additionally, key financial metrics such as EBIT margin and capital expenditure as a percentage of revenue were meticulously examined.",
-    "result": "The investment analysis concluded that Meridian Digital Holdings is positioned for robust growth, with a projected EBIT margin increasing from 40.5% in FY2022 to 43.4% in FY2024. The DCF valuation indicated a fair share price of $460, suggesting a strong investment opportunity.",
+    "summary": "This project provides a detailed financial model and investment analysis for Meridian Digital Holdings (MDH), a leading player in the digital services industry. It delivers insights into revenue growth, profitability metrics, and valuation forecasts for the company over the next several years.",
+    "objective": "The project aimed to evaluate the financial health and future growth potential of Meridian Digital Holdings, specifically addressing the question of its investment viability. It sought to analyse key financial metrics and market conditions that could impact MDH's performance.",
+    "context": "The digital services industry is experiencing rapid growth, driven by advancements in AI and cloud computing technologies. Meridian Digital Holdings faces competitive pressures from other tech giants, with a projected revenue growth rate of 16.2% in FY2022 and a gross margin stabilising around 69.4% by FY2024.",
+    "approach": "The analysis employed a Discounted Cash Flow (DCF) model to assess the company's valuation, alongside a comprehensive review of financial metrics such as EBIT margin and capital expenditure trends. Key inputs included revenue projections and cost assumptions derived from historical performance.",
+    "result": "The financial model indicated a projected total revenue of $245.1 billion by FY2024, with an EBIT margin improving to 43.4%. The analysis concluded that MDH's current share price of $460 reflects a robust growth trajectory, supported by a cost of equity estimated at 8.70%.",
     "skills": [
       "Financial modelling",
-      "Valuation analysis",
+      "Investment analysis",
       "Data interpretation",
+      "Valuation techniques",
       "Market research",
-      "Strategic analysis",
-      "Report writing",
-      "Presentation skills"
+      "Strategic forecasting",
+      "Report writing"
     ],
     "tools": [
       "Excel",
@@ -927,19 +1253,19 @@ export default [
     "title": "UK Investment Strategy",
     "status": "Active",
     "date": "2026-07",
-    "summary": "The 'UK Investment Strategy' project provides a data-driven investment guide tailored for the average UK investor, utilising salary data and historical returns. It highlights the significant wealth accumulation potential through early and consistent investment, particularly for younger individuals.",
-    "objective": "This project aimed to demonstrate the long-term financial benefits of starting to invest early, addressing the common misconception that only those with substantial initial capital can achieve significant wealth. It sought to quantify the advantages of regular contributions over time using real salary data.",
-    "context": "The project was motivated by the observed disparity in investment behaviours across different age groups, where younger individuals often have limited disposable income but greater time for compounding. Additionally, the findings reflect broader trends in the investment landscape, including the high failure rate of day traders, with 70% losing money over five years compared to passive investors.",
-    "approach": "The analysis employed Monte Carlo simulations to project investment outcomes based on varying contribution levels and starting ages. It also utilised UK salary data from the Office for National Statistics (ONS) to inform the investment strategy and projections.",
-    "result": "Key findings revealed that starting to invest at age 18 with a contribution of £200 per month could yield 4.4 times more wealth than starting at age 35. The project concluded that even a modest monthly saving of £159 could accumulate to £216,000 over 30 years, demonstrating the power of compound growth.",
+    "summary": "The 'UK Investment Strategy' project provides a data-driven guide for average investors in the UK, utilising salary data and historical returns to inform personal investment decisions. It delivers insights on the impact of starting age on wealth accumulation, specifically highlighting the advantages of early investment.",
+    "objective": "The project aimed to analyse the financial outcomes of different investment starting ages and saving rates to encourage early investment among young adults. It sought to address the common misconception that only higher contributions lead to significant wealth accumulation.",
+    "context": "In the current UK economic landscape, young individuals face the challenge of limited disposable income while having the most time for compounding investments. The project responds to the tension between younger earners with less cash and older earners with limited investment runway, amidst a backdrop of increasing financial literacy demands.",
+    "approach": "The analysis employed Monte Carlo simulations to model potential investment outcomes based on varying starting ages and contribution levels. Additionally, it utilised UK salary data from the ONS to contextualise the findings within real-world income brackets.",
+    "result": "The project concluded that starting to invest at age 18 with a contribution of £200 per month could yield a wealth accumulation of £1,284,613 by age 65, representing a growth multiple of 11.4x. It also revealed that 70% of day traders lose money over five years, contrasting sharply with the performance of passive investors.",
     "skills": [
-      "Data analysis",
-      "Financial modelling",
-      "Investment strategy development",
-      "Statistical simulation",
-      "Market research",
-      "Presentation skills",
-      "Quantitative analysis"
+      "Data Analysis",
+      "Financial Modelling",
+      "Investment Strategy Development",
+      "Statistical Simulation",
+      "Market Research",
+      "Presentation Skills",
+      "Report Writing"
     ],
     "tools": [
       "Image",
@@ -1002,19 +1328,19 @@ export default [
     "title": "Project Apex",
     "status": "Active",
     "date": "2026-07",
-    "summary": "Project Apex is a quantitative risk analysis project focused on enhancing validation and uncertainty quantification for a financial portfolio. It delivers key risk metrics, including a 99% daily Value at Risk (VaR) of $80,545 and an annualised volatility of 44.63%, utilising advanced statistical methods. The analysis spans a five-year period from June 2021 to June 2026, based on 1,825 observations.",
-    "objective": "The project aimed to accurately quantify the risk associated with a $1 million portfolio by employing robust statistical models. It sought to address the inadequacies of traditional normal distribution models in estimating risk metrics.",
-    "context": "The financial industry faces increasing scrutiny regarding risk management practices, particularly following market volatility events. This project responds to the demand for more accurate risk assessments, especially in light of regulatory pressures and the inadequacies of conventional risk frameworks that often underestimate potential losses.",
-    "approach": "The analysis employed the GJR-GARCH model for volatility estimation and conducted formal model selection tests, including the Likelihood Ratio test and the Vuong test, to compare distribution models. It also utilised bootstrapping techniques for confidence interval estimation and out-of-sample validation.",
-    "result": "The findings revealed that the normal distribution significantly underestimates risk, with a normal VaR of $65,120 compared to a Student-t VaR of $92,583, indicating a 30% underestimation. Additionally, the GJR-GARCH model was preferred for capturing leverage effects, highlighting the need for higher-order specifications due to remaining ARCH effects.",
+    "summary": "Project Apex is a quantitative risk analysis project focused on enhancing validation and uncertainty quantification for financial portfolios. It utilises advanced statistical methods to assess risk metrics for a $1 million portfolio, delivering insights into volatility and value-at-risk (VaR) measures. The analysis covers a period from June 2021 to June 2026, with a total of 1,825 observations.",
+    "objective": "The project aimed to determine the most accurate risk models for predicting portfolio volatility and potential losses. Specifically, it sought to address the inadequacies of traditional normal distribution models in capturing tail risks and volatility dynamics.",
+    "context": "In the context of increasing market volatility and regulatory scrutiny, there is a pressing need for robust risk assessment frameworks in the financial industry. The findings highlight the limitations of conventional models, particularly in light of significant market events that can lead to extreme losses, such as the observed maximum drawdown of -76.63%.",
+    "approach": "The analysis employed a variety of statistical tests, including the Likelihood Ratio (LR) test and the Vuong test, to evaluate model performance. Additionally, GJR-GARCH models were utilised to capture volatility dynamics and leverage effects, ensuring a comprehensive assessment of risk metrics.",
+    "result": "The project concluded that the Student-t distribution was preferred over the normal distribution for modelling returns, with a 99% VaR of $92,583 compared to $65,120 for the normal model, indicating a significant underestimation of risk. Furthermore, the GJR-GARCH model was identified as superior for capturing volatility, with residual diagnostics indicating the need for further model refinement.",
     "skills": [
       "Quantitative analysis",
       "Statistical modelling",
       "Risk assessment",
       "Data validation",
-      "Bootstrapping techniques",
-      "Model selection",
-      "Financial forecasting"
+      "Bootstrap methods",
+      "Financial forecasting",
+      "Model selection"
     ],
     "tools": [
       "Image",
@@ -1116,24 +1442,78 @@ export default [
     ]
   },
   {
+    "id": "project-harbour",
+    "roleId": "quant-analyst",
+    "title": "Project Harbour",
+    "status": "Active",
+    "date": "2026-10",
+    "summary": "Project Harbour is a quantitative analysis focused on retirement drawdown risk, utilising Monte Carlo simulations to evaluate potential financial outcomes for retirees. The project specifically examines the impact of various market conditions and health-related expenses on a $1,000,000 retirement portfolio, delivering insights into the likelihood of financial ruin before age 95.",
+    "objective": "The project aimed to assess the risk of running out of funds during retirement under different scenarios, including market downturns and health shocks. It sought to answer how these factors influence the sustainability of a retirement portfolio over a 30-year period.",
+    "context": "The analysis is set against a backdrop of increasing retirement longevity and the financial pressures retirees face, including potential healthcare costs and market volatility. With a significant portion of retirees relying on fixed withdrawal strategies, understanding the risks associated with these variables is critical in today's economic climate.",
+    "approach": "The project employed Monte Carlo simulations, generating 20,000 paths per scenario to model various retirement outcomes. It utilised a stress ladder approach to systematically introduce additional risks, such as regime changes and health expenses, to evaluate their cumulative impact on retirement sustainability.",
+    "result": "The findings revealed a 40.0% chance of financial ruin when accounting for a bear market in the first year and health shocks, compared to a 15.2% chance under normal return conditions. The median ending wealth for the base case scenario was $773,259, highlighting the significant risks retirees face as they navigate complex financial landscapes.",
+    "skills": [
+      "Quantitative analysis",
+      "Monte Carlo simulation",
+      "Financial modelling",
+      "Risk assessment",
+      "Data interpretation",
+      "Statistical analysis",
+      "Scenario planning"
+    ],
+    "tools": [
+      "Python",
+      "PowerPoint",
+      "Excel",
+      "Word"
+    ],
+    "files": [
+      {
+        "label": "app.py",
+        "type": "Python",
+        "path": "/files/quant-analyst/project-harbour/app.py"
+      },
+      {
+        "label": "Project_Harbour_Briefing.pptx",
+        "type": "PowerPoint",
+        "path": "/files/quant-analyst/project-harbour/Project_Harbour_Briefing.pptx"
+      },
+      {
+        "label": "Project_Harbour_Results.xlsx",
+        "type": "Excel",
+        "path": "/files/quant-analyst/project-harbour/Project_Harbour_Results.xlsx"
+      },
+      {
+        "label": "Project_Harbour_Summary_Note.docx",
+        "type": "Word",
+        "path": "/files/quant-analyst/project-harbour/Project_Harbour_Summary_Note.docx"
+      },
+      {
+        "label": "run_simulation.py",
+        "type": "Python",
+        "path": "/files/quant-analyst/project-harbour/run_simulation.py"
+      }
+    ]
+  },
+  {
     "id": "project-pear",
     "roleId": "quant-analyst",
     "title": "Project Pear",
     "status": "Active",
     "date": "2026-07",
-    "summary": "Project Pear is a quantitative valuation and momentum analysis of a major consumer technology company, conducted on 18 June 2026. It delivers a detailed assessment of the company's current market price of $297.77 against a DCF fair value of $100.97, indicating significant overvaluation.",
-    "objective": "The project aimed to determine the fair value of the company's stock and assess its momentum signals. It specifically sought to address whether the current market price accurately reflects the company's underlying cash flows and growth potential.",
-    "context": "The consumer technology industry is characterised by rapid innovation and intense competition, leading to significant market volatility. The analysis was motivated by the company's trading at a premium to peers, with a P/E z-score of 1.28 and a P/B z-score of 1.73, suggesting investor sentiment may not align with fundamental valuations.",
-    "approach": "The project utilised a Discounted Cash Flow (DCF) model alongside Monte Carlo simulations, conducting 50,000 simulations to estimate fair value. Additionally, momentum analysis was performed using indicators such as the Relative Strength Index (RSI) and Moving Average Convergence Divergence (MACD).",
-    "result": "The analysis concluded that the company's stock is overvalued, with a DCF median fair value of $100.97 and an implied return of -66.1%. Key findings included a bullish long-term momentum signal, evidenced by a 1-year return of 52.8%, but short-term indicators suggested caution with a bearish MACD.",
+    "summary": "Project Pear is a quantitative valuation and momentum analysis of a major consumer technology company, conducted on June 18, 2026. The project delivers insights into the company's fair value, trading metrics, and momentum signals, revealing a significant disparity between market price and intrinsic value.",
+    "objective": "The project aimed to assess whether the company's current market price of $297.77 is justified by its intrinsic value, estimated through a discounted cash flow (DCF) analysis. It sought to determine the implications of this valuation for potential investors, particularly given the observed -66.1% implied return.",
+    "context": "The consumer technology industry is characterised by high volatility and competitive dynamics, with the company trading at a premium to its peers, reflected in a trailing P/E ratio of 36.05. Regulatory pressures and market conditions have led to increased scrutiny of valuation methods, necessitating a thorough analysis of the company's financial metrics and market performance.",
+    "approach": "The analysis employed a Monte Carlo DCF valuation model with 50,000 simulations to estimate fair value, alongside momentum analysis using indicators such as the Relative Strength Index (RSI) and Moving Average Convergence Divergence (MACD). Additionally, relative valuation metrics including Z-scores for P/E and P/B ratios were calculated to compare the company against its peers.",
+    "result": "The DCF analysis yielded a median fair value of $100.97, indicating that the company is overvalued at its current price, with a probability of being undervalued at 0.0%. The findings also highlighted significant momentum signals, including a long-term bullish trend with a 1-year return of 52.81%, despite short-term bearish indicators.",
     "skills": [
       "Quantitative analysis",
       "Financial modelling",
-      "Data simulation",
       "Valuation techniques",
-      "Momentum analysis",
       "Statistical analysis",
-      "Market research"
+      "Market research",
+      "Data visualisation",
+      "Risk assessment"
     ],
     "tools": [
       "Image",
@@ -1210,19 +1590,19 @@ export default [
     "title": "Python charts",
     "status": "Active",
     "date": "2026-05",
-    "summary": "The 'Python charts' project is a comprehensive catalogue of quantitative financial analysis charts, specifically designed for price and returns analysis. It delivers a structured reference guide that includes detailed descriptions, use cases, and implementation notes for various chart types used in financial analysis.",
-    "objective": "This project aimed to create a complete reference guide for quantitative analysts to facilitate effective financial analysis through visual data representation. The primary question addressed was how to organise and present complex financial data in a user-friendly manner.",
-    "context": "The financial services industry is increasingly reliant on data visualisation to make informed investment decisions amidst volatile market conditions. With the rise of algorithmic trading and quantitative analysis, there is a pressing need for clear, concise, and informative charting tools that can effectively communicate price movements and risk factors to investors.",
-    "approach": "The project utilised various charting techniques, including Price History with Volume, Returns Time Series, Cumulative Returns, and Drawdown Profile, to visually represent financial data. Each chart type was developed following best practices in quantitative analysis to ensure clarity and usability.",
-    "result": "The project produced a detailed chart reference guide that enables analysts to quickly assess price trends, volatility, and risk through visual data representation. Key findings include the importance of cumulative returns for performance storytelling and the critical role of drawdown profiles in understanding investment risk.",
+    "summary": "The 'Python charts' project is a comprehensive catalogue of quantitative financial analysis charts, specifically designed for visualising price and return data in the financial industry. It includes detailed descriptions and implementation notes for various chart types, enabling analysts to effectively communicate asset performance and risk characteristics.",
+    "objective": "This project aimed to enhance the understanding of price movements and return dynamics in financial assets through visual representation. The key question addressed was how to effectively illustrate complex financial data to facilitate better decision-making for investors.",
+    "context": "The project was motivated by the increasing need for clear and informative financial visualisations in a volatile market environment, where investors face significant risks and uncertainties. With the rise of algorithmic trading and data-driven investment strategies, effective charting has become essential for analysing market trends and making informed investment decisions.",
+    "approach": "The project utilised various quantitative analysis frameworks, including time series analysis for returns and cumulative returns, as well as risk assessment through drawdown profiles. Specific chart types such as price history with volume, returns time series, and cumulative returns were developed to provide a holistic view of asset performance.",
+    "result": "The project produced a set of four foundational charts: Price History with Volume, Returns Time Series, Cumulative Returns, and Drawdown Profile, each serving a unique purpose in financial analysis. Notably, the Drawdown Profile chart highlighted the maximum drawdown and recovery time, essential metrics for assessing investment risk.",
     "skills": [
-      "Quantitative Analysis",
-      "Data Visualisation",
-      "Financial Modelling",
-      "Statistical Analysis",
-      "Risk Assessment",
-      "Charting Techniques",
-      "Report Writing"
+      "Quantitative analysis",
+      "Data visualisation",
+      "Financial modelling",
+      "Statistical analysis",
+      "Risk assessment",
+      "Time series analysis",
+      "Python programming"
     ],
     "tools": [
       "Python",
@@ -1568,18 +1948,18 @@ export default [
     "status": "Active",
     "date": "2025-12",
     "summary": "The 'Copperstone' project focuses on the financial and marketing analysis of Copperstone Brewing Co., a craft brewery in the UK. It delivers a comprehensive overview of revenue streams, cost structures, and competitive positioning within the brewing industry.",
-    "objective": "This project aimed to assess Copperstone's financial performance and market potential to identify growth opportunities. The key question addressed was how Copperstone can enhance its market share and profitability amidst increasing competition.",
-    "context": "The craft brewing industry in the UK is characterised by intense competition, with over 1,800 independent breweries. Copperstone faces pressures from both buyer power, with numerous suppliers available, and the threat of substitutes from other alcoholic beverages, which complicates market positioning.",
-    "approach": "The analysis employed Porter's Five Forces framework to evaluate competitive dynamics and a financial forecasting model to project revenue and costs. Key metrics included EBITDA margins and gross profit analysis over a three-year period.",
-    "result": "The project concluded that Copperstone's total revenue is projected to grow from £1,082K in FY 2023 to £1,310K in FY 2025, with a gross margin increase to 55.0%. Recommendations included increasing marketing expenditure from 0.6% to align more closely with industry standards, potentially boosting brand visibility and sales.",
+    "objective": "The project aimed to assess Copperstone's financial performance and identify growth opportunities in a competitive market. Specifically, it sought to analyse revenue growth rates and margins against industry benchmarks.",
+    "context": "The craft brewing industry in the UK is characterised by intense competition, with over 1,800 independent breweries. Copperstone faces challenges such as high buyer power and a significant threat from substitutes, including wine and spirits, which necessitate strategic marketing and operational improvements.",
+    "approach": "The analysis utilised Porter's Five Forces framework to evaluate competitive dynamics and a financial benchmarking approach to compare Copperstone's performance against regional averages. Key metrics such as EBITDA margin and gross margin were scrutinised to identify areas for improvement.",
+    "result": "The findings revealed that Copperstone's total revenue is projected to reach £1,310K by FY 2025, with a gross margin of 55.0%. Recommendations included increasing marketing expenditure, which currently stands at only 0.6% of revenue, to enhance brand visibility and drive sales.",
     "skills": [
-      "Financial analysis",
-      "Market research",
-      "Strategic planning",
-      "Data interpretation",
-      "Competitive analysis",
-      "Forecasting",
-      "Report writing"
+      "Financial Analysis",
+      "Market Research",
+      "Strategic Planning",
+      "Data Interpretation",
+      "Competitive Analysis",
+      "Report Writing",
+      "Presentation Skills"
     ],
     "tools": [
       "Excel",
@@ -1610,19 +1990,19 @@ export default [
     "title": "Qiko",
     "status": "Active",
     "date": "2025-04",
-    "summary": "The Qiko project is a comprehensive marketing plan for Ember Kitchen Catering, a Singapore-based halal-certified catering company. It aims to reposition the Healthy Tingkat meal subscription into a standalone B2C brand, addressing its current identity and marketing challenges to drive growth in a competitive meal delivery market.",
-    "objective": "The project aimed to establish a distinct brand identity for Qiko, which had been struggling with stagnant growth at 8% year-on-year and only generating S$180K annually. It sought to transition the product from a B2B-focused marketing approach to a consumer-centric strategy that effectively targets health-conscious professionals.",
-    "context": "The Singapore healthy meal delivery market is experiencing a growth rate of approximately 12% annually, with a total addressable market valued between S$380M and S$450M. Ember Kitchen Catering's core business primarily serves weddings and corporate events, operating at 65% kitchen capacity, while the meal subscription segment remains underexploited.",
-    "approach": "The project utilised market analysis frameworks, including competitor pricing assessments and target market persona development, to identify opportunities for brand repositioning. A SWOT analysis was conducted to evaluate the strengths, weaknesses, opportunities, and threats associated with the Healthy Tingkat product.",
-    "result": "The rebranding to Qiko was proposed, featuring a new identity that resonates with health-conscious consumers, incorporating vibrant teal and warm coral colours and modern typography. The target price range for meals was set between S$8.50 and S$10.50, filling a gap in the market for halal-certified, HPB-endorsed meal options.",
+    "summary": "The 'Qiko' project is a comprehensive marketing plan for Ember Kitchen Catering, a Singapore-based halal-certified catering company. It focuses on repositioning the Healthy Tingkat meal subscription into a standalone B2C brand, targeting health-conscious professionals and aiming to capture a significant share of the growing healthy meal delivery market.",
+    "objective": "The project aimed to address the stagnation of the Healthy Tingkat product, which had only achieved S$180K in revenue, representing just 6% of total sales. It sought to establish a distinct brand identity and improve visibility among the target customer base.",
+    "context": "The Singapore healthy meal delivery market is experiencing a growth rate of approximately 12% annually, with a total addressable market valued between S$380M and S$450M. Ember Kitchen Catering's core business primarily serves B2B clients, leaving the B2C segment underdeveloped, particularly in the competitive landscape where brands like Grain and Yummy Bros dominate.",
+    "approach": "The project employed market analysis techniques, including competitor pricing assessments and consumer persona development, to inform the rebranding strategy. A SWOT analysis was conducted to identify the strengths, weaknesses, opportunities, and threats associated with the Healthy Tingkat product.",
+    "result": "The project concluded with the rebranding of Healthy Tingkat to 'Qiko', a name that reflects vitality and energy, and a proposed price range of S$8.50 to S$10.50 per meal. The new brand identity features a vibrant colour scheme and modern typography, aimed at appealing to the target demographic and enhancing market presence.",
     "skills": [
       "Market Analysis",
       "Brand Development",
       "Consumer Research",
-      "Competitor Analysis",
-      "Strategic Planning",
+      "SWOT Analysis",
+      "Pricing Strategy",
       "Digital Marketing",
-      "Visual Communication"
+      "Strategic Planning"
     ],
     "tools": [
       "PowerPoint",
@@ -1653,19 +2033,19 @@ export default [
     "title": "Natural Testosterone and Protein Enhancement",
     "status": "Active",
     "date": "2026-06",
-    "summary": "The project titled 'Natural Testosterone and Protein Enhancement' is a comprehensive meta-analysis evaluating the efficacy and side-effect profiles of natural testosterone-enhancing compounds and protein supplements within the global sports nutrition market, which surpassed $45 billion in 2025. It synthesises data from 74 peer-reviewed studies to provide insights into dose-response relationships for both benefits and adverse effects.",
-    "objective": "The project aimed to assess the effectiveness and safety of various natural supplements in enhancing testosterone levels and muscle growth. It sought to address the fragmented evidence base surrounding these compounds, particularly in comparison to synthetic anabolic agents known for their severe side effects.",
-    "context": "The sports nutrition industry is facing increasing consumer demand for natural alternatives to synthetic anabolic agents due to concerns over their well-documented side effects, including hepatotoxicity and cardiovascular strain. This project responds to a market trend towards safer supplementation options that promise physiological benefits with fewer adverse outcomes.",
-    "approach": "The analysis employed a meta-analytic framework to evaluate data from 74 studies, utilising statistical measures such as Cohen's d to assess the effect sizes of various compounds. It also mapped dose-response relationships to understand both the benefits and potential harms associated with natural testosterone enhancers.",
-    "result": "The findings revealed that compounds such as Fenugreek Extract and Ashwagandha (KSM-66) demonstrated significant efficacy with Cohen's d values of 0.52 and 0.58, respectively, indicating moderate to strong effects on testosterone enhancement. Additionally, the analysis highlighted adverse event rates, with Fenugreek showing a 9.2% incidence of gastrointestinal discomfort compared to a 5.3% rate in the placebo group.",
+    "summary": "The project titled 'Natural Testosterone and Protein Enhancement' is a comprehensive meta-analysis that evaluates the efficacy and side-effect profiles of natural testosterone-enhancing compounds and protein supplements within the global sports nutrition industry. It synthesises findings from 74 peer-reviewed studies, providing insights into dose-response relationships and the safety of these supplements.",
+    "objective": "The project aimed to assess the effectiveness and adverse effects of various natural supplements in enhancing testosterone levels and muscle growth. It sought to address the fragmented evidence base surrounding consumer demand for safer alternatives to synthetic anabolic agents.",
+    "context": "The global sports nutrition market surpassed $45 billion in 2025, with a significant rise in demand for testosterone boosters and protein supplements. Amidst concerns over the side effects of synthetic anabolic agents, such as hepatotoxicity and cardiovascular strain, there is a pressing need for reliable evidence on the safety and efficacy of natural alternatives.",
+    "approach": "The analysis employed a meta-analytic framework to synthesise data from 74 studies published between 2004 and 2025, utilising statistical measures such as Cohen's d to evaluate effect sizes and adverse event rates. It also mapped dose-response relationships for benefits like lean mass gain and strength improvement.",
+    "result": "The findings revealed that compounds like Fenugreek Extract and Ashwagandha (KSM-66) demonstrated significant efficacy with Cohen's d values of 0.52 and 0.58, respectively, while also highlighting adverse event rates associated with these supplements. The pooled analysis indicated an average adverse event rate of 7.53% compared to 4.7% for placebo, predominantly involving mild gastrointestinal symptoms.",
     "skills": [
-      "Data analysis",
-      "Meta-analysis",
-      "Statistical interpretation",
-      "Research synthesis",
-      "Critical thinking",
-      "Academic writing",
-      "Knowledge of nutritional science"
+      "Data Analysis",
+      "Meta-Analysis",
+      "Statistical Interpretation",
+      "Research Methodology",
+      "Literature Review",
+      "Scientific Writing",
+      "Critical Thinking"
     ],
     "tools": [
       "Image",
@@ -1711,24 +2091,55 @@ export default [
     ]
   },
   {
+    "id": "subconscious-learning-theoretical",
+    "roleId": "research-papers",
+    "title": "Subconscious Learning (Theoretical)",
+    "status": "Active",
+    "date": "2026-09",
+    "summary": "This research proposal investigates the subconscious acquisition of theoretical knowledge through passive exposure, focusing on psychology education. It aims to determine if a student can gain meaningful knowledge without deliberate study by engaging with audio and contextual materials over ten weeks.",
+    "objective": "The project seeks to explore whether passive exposure can lead to significant knowledge gains in theoretical concepts, addressing the gap in existing research on subconscious learning in formal education. It specifically questions the effectiveness of informal learning methods in acquiring factual and conceptual knowledge.",
+    "context": "The study is motivated by the limited application of implicit learning research, which has primarily focused on procedural knowledge rather than theoretical content. With increasing interest in alternative educational methods, this research responds to the need for innovative approaches to enhance learning outcomes in a rapidly evolving educational landscape.",
+    "approach": "The research employs a longitudinal single-case study design, utilising frameworks such as the Input Hypothesis and levels of processing to assess learning outcomes. Knowledge recall and understanding will be evaluated bi-weekly through a multi-layered assessment distinguishing between recognition and recall.",
+    "result": "If the participant demonstrates measurable knowledge gains solely through passive exposure, the findings will extend the literature on subconscious learning into theoretical domains. This could lead to practical implications for integrating informal learning channels into educational practices.",
+    "skills": [
+      "Research design",
+      "Data analysis",
+      "Literature review",
+      "Assessment development",
+      "Cognitive psychology application",
+      "Theoretical framework application",
+      "Longitudinal study execution"
+    ],
+    "tools": [
+      "Word"
+    ],
+    "files": [
+      {
+        "label": "Subconscious Learning (Theoretical) - Research Proposal.docx",
+        "type": "Word",
+        "path": "/files/research-papers/subconscious-learning-theoretical/Subconscious Learning (Theoretical) - Research Proposal.docx"
+      }
+    ]
+  },
+  {
     "id": "subconscious-learning-work-place",
     "roleId": "research-papers",
     "title": "Subconscious Learning (Work place)",
     "status": "Active",
     "date": "2026-04",
-    "summary": "This project investigates the impact of subconscious learning on employee development within knowledge-based markets, focusing on the application of Subconscious Adaptive Learning Theory (SALT). It delivers insights into how informal learning processes can enhance workplace training effectiveness, particularly in European contexts.",
-    "objective": "The project aimed to explore the gap between formal training methods and the actual learning experiences of employees in dynamic environments. It sought to answer how subconscious learning can be leveraged to improve employee capabilities in knowledge-based sectors.",
-    "context": "The research is set against the backdrop of rapid technological advancements and evolving workplace demands that challenge traditional training methods. The CIPD reports from 2020 and 2023 highlight the inadequacies of formal training in keeping pace with these changes, prompting a need for alternative learning strategies.",
-    "approach": "The study employed Subconscious Adaptive Learning Theory (SALT) as its theoretical framework, alongside experimental and simulation methodologies to gather data. Data analysis techniques were utilised to assess participant and agent results, providing a comprehensive understanding of subconscious learning effects.",
-    "result": "The findings revealed that informal learning significantly contributes to employee development, with specific data indicating enhanced performance metrics among participants who engaged in subconscious learning activities. Recommendations include integrating SALT principles into existing training programmes to better align with real-world learning experiences.",
+    "summary": "This project investigates the impact of subconscious learning on employee development within knowledge-based markets, focusing on the application of Subconscious Adaptive Learning Theory (SALT). It delivers insights into how informal learning processes contribute to employee capabilities in dynamic work environments.",
+    "objective": "The project aimed to explore the gap in understanding how subconscious learning influences formal training effectiveness in the workplace. It sought to address the challenge of aligning employee development with rapidly evolving industry demands.",
+    "context": "The study is set against the backdrop of knowledge-based sectors where traditional training methods are increasingly inadequate due to fast-paced technological advancements and changing workplace dynamics. The research highlights the necessity for innovative learning approaches that complement formal training.",
+    "approach": "The methodology employed included experimental simulations to assess the effects of subconscious learning, guided by the Subconscious Adaptive Learning Theory (SALT). Data analysis was conducted to evaluate participant and agent results, providing a comprehensive understanding of learning outcomes.",
+    "result": "The findings revealed that subconscious learning significantly enhances employee performance, with a notable increase in capability development reported among participants. The study concluded that integrating SALT into training programmes could lead to more effective employee development strategies.",
     "skills": [
-      "Research Methodology",
-      "Data Analysis",
-      "Literature Review",
-      "Experimental Design",
-      "Simulation Techniques",
-      "Theoretical Framework Application",
-      "Report Writing"
+      "Research analysis",
+      "Data interpretation",
+      "Experimental design",
+      "Simulation modelling",
+      "Literature review",
+      "Theoretical framework application",
+      "Report writing"
     ],
     "tools": [
       "Word"
@@ -1747,19 +2158,19 @@ export default [
     "title": "Subconscious Learning (Work place) Complete",
     "status": "Active",
     "date": "2026-05",
-    "summary": "This research paper, titled 'Subconscious Learning’s Influence on Employee Development', investigates the role of subconscious learning in enhancing employee capabilities within knowledge-based markets, specifically the UK financial services sector. It delivers insights into the Subconscious Adaptive Learning Theory (SALT) and its practical implications for workplace training design.",
-    "objective": "The project aimed to explore how subconscious learning contributes to employee development, addressing the gap between formal training and the informal learning that occurs in everyday work. It sought to establish a clear link between cognitive mechanisms of implicit learning and practical workplace outcomes.",
-    "context": "The research is set against the backdrop of rapid changes in tools and systems within knowledge-based sectors, where traditional training methods often fail to meet evolving demands. Employees report that significant capability development occurs through informal learning experiences, highlighting the need for new training frameworks that accommodate these dynamics.",
-    "approach": "The study employed a mixed-method design, combining a five-week longitudinal experiment with two human participants and a parallel agent-based simulation involving 50 coded agents. The research utilised the Subconscious Adaptive Learning Theory (SALT) to connect implicit learning mechanisms with tacit knowledge acquisition.",
-    "result": "The findings revealed statistically significant improvements in agents' arithmetic fluency (d = 2.13) and trend sensitivity (d = 2.39) over the study period, indicating the effectiveness of subconscious learning in structured environments. Human participants also showed improvement, albeit with more variability influenced by cognitive and emotional factors.",
+    "summary": "This research paper, titled 'Subconscious Learning’s Influence on Employee Development', investigates the role of subconscious learning in enhancing employee capabilities within knowledge-based markets, specifically focusing on the UK financial services sector. It introduces the Subconscious Adaptive Learning Theory (SALT) and examines its practical implications for workplace training design.",
+    "objective": "The project aimed to explore how subconscious learning can be effectively integrated into employee development strategies to address the gap between formal training and real-world capability enhancement. It sought to answer how implicit learning processes contribute to professional growth in dynamic work environments.",
+    "context": "The study is set against the backdrop of rapid technological advancements and evolving demands in knowledge-based industries, where traditional training methods often fail to meet employee needs. It highlights the challenges posed by formal training structures that do not align with the informal, experiential learning that employees report as more impactful.",
+    "approach": "A mixed-method design was employed, combining a five-week longitudinal experiment with two human participants and an agent-based simulation involving 50 coded agents. The study utilised the Subconscious Adaptive Learning Theory (SALT) to connect cognitive mechanisms of implicit learning with tacit knowledge acquisition.",
+    "result": "The findings revealed statistically significant improvements in the agents' arithmetic fluency (d = 2.13) and trend sensitivity (d = 2.39) over the study period, suggesting that subconscious learning can enhance workplace capability. The research concluded that while subconscious learning is measurable, its effectiveness is contingent upon a structured and supportive learning environment.",
     "skills": [
       "Research Design",
       "Data Analysis",
-      "Statistical Modelling",
+      "Statistical Learning",
       "Agent-Based Simulation",
-      "Literature Review",
       "Cognitive Theory Application",
-      "Workplace Training Development"
+      "Workplace Training Development",
+      "Critical Thinking"
     ],
     "tools": [
       "Image",
@@ -1810,17 +2221,17 @@ export default [
     "title": "3D Printed Housing in UK",
     "status": "Active",
     "date": "2025-09",
-    "summary": "This project reviews the application of 3D concrete printing (3DCP) technology in the UK housing market, focusing on its potential to address the affordable housing crisis. It delivers insights into the regulatory, economic, and environmental implications of adopting 3DCP for residential construction.",
-    "objective": "The project aimed to assess the viability of 3DCP as a solution to the UK's housing shortage, which requires 300,000 new homes annually but only delivers about 230,000. It sought to identify the benefits and challenges of implementing this technology within existing regulatory frameworks.",
-    "context": "The UK is experiencing a significant housing crisis, particularly in London, where there is a shortfall of 24,000 homes per year. The construction industry is hindered by a 25% skilled labour deficit and rising material costs, prompting a shift towards Modern Methods of Construction (MMC) such as 3DCP.",
-    "approach": "The project utilised a comprehensive literature review of peer-reviewed studies from institutions like Loughborough University and TU Eindhoven, alongside an analysis of UK building regulations and the economic implications of 3DCP. It evaluated the technology's cost reduction potential and environmental impact.",
-    "result": "The findings indicate that 3DCP can reduce construction costs by 30-60% and decrease build times by up to 90%, while also minimising material waste by 80-90%. However, it concluded that regulatory clarity is needed for mass deployment, and recommended pilot projects on brownfield sites to demonstrate its effectiveness.",
+    "summary": "This project is a comprehensive review of 3D Concrete Printing (3DCP) technology in the UK housing sector, focusing on its potential for affordable housing. It evaluates the current state of 3DCP, its regulatory challenges, and its economic and environmental implications for residential construction.",
+    "objective": "The project aimed to assess the applicability of 3DCP in addressing the UK's housing crisis, particularly the shortfall of 300,000 new homes annually. It sought to identify the benefits and challenges of implementing this technology within existing regulatory frameworks.",
+    "context": "The UK is experiencing a significant housing crisis, with a delivery gap of approximately 70,000 homes per year. The construction industry faces a 25% skilled labour deficit and rising material costs, prompting interest in Modern Methods of Construction (MMC) such as 3DCP to meet housing demands efficiently.",
+    "approach": "The project employed a literature review methodology, drawing on peer-reviewed studies from institutions like Loughborough University and TU Eindhoven. It utilised frameworks such as SWOT analysis to evaluate the strengths, weaknesses, opportunities, and threats of 3DCP in the context of UK housing.",
+    "result": "The review concluded that 3DCP could reduce construction costs by 30-60% and build times by up to 90%, while also decreasing material waste by 80-90%. However, it highlighted the need for regulatory clarity and recommended pilot projects to demonstrate 3DCP's viability for affordable housing.",
     "skills": [
       "Research analysis",
       "Literature review",
+      "Data interpretation",
       "Regulatory assessment",
       "Cost-benefit analysis",
-      "Data interpretation",
       "Policy recommendation",
       "Technical writing"
     ],

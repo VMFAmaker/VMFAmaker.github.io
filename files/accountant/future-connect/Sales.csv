@@ -1,26 +1,26 @@
 Type,Account Ref,Nominal Code,Department,Date,Ref,Ex.Ref,Details,Net Amount,Tax Code,Tax Amount,Exchange Rate
-SI,COL001,4000,0,05/06/2024,COL 1258,,10x HP/Dell Business Laptops,1712.50,T1,342.50,1
-SI,COL001,4000,0,05/06/2024,COL 1258,,Installation Configuration Labelling and Testing,500.00,T1,100.00,1
-SI,COL001,4000,0,26/06/2024,COL 1258,,10x HP/Dell Business Laptops,737.50,T1,147.50,1
-SI,COL001,4000,0,22/07/2024,COL 12,,34x HP Ultra slim Desktop PCs,310.00,T1,62.00,1
-SI,COL001,4000,0,04/08/2024,COL - FT 1547,,Full set of toner (C K M Y) for HP LaserJet Pro 400,2620.00,T1,524.00,1
-SI,COL001,4000,0,04/08/2024,COL - FT 1547,,Toner for HP LaserJet 200 M251N,130.00,T1,26.00,1
+SI,COL001,4000,0,05/06/2024,COL 1258,,10x HP/Dell Business Laptops,1712.5,T1,342.5,1
+SI,COL001,4000,0,05/06/2024,COL 1258,,Installation Configuration Labelling and Testing,500,T1,100,1
+SI,COL001,4000,0,26/06/2024,COL 1258,,10x HP/Dell Business Laptops,737.5,T1,147.5,1
+SI,COL001,4000,0,22/07/2024,COL 12,,34x HP Ultra slim Desktop PCs,310,T1,62,1
+SI,COL001,4000,0,04/08/2024,COL - FT 1547,,Full set of toner (C K M Y) for HP LaserJet Pro 400,2620,T1,524,1
+SI,COL001,4000,0,04/08/2024,COL - FT 1547,,Toner for HP LaserJet 200 M251N,130,T1,26,1
 SI,COL001,4000,0,07/08/2024,COL 1276,,10x HP/Dell Business Laptops,368.75,T1,73.75,1
 SI,HLB001,4000,0,09/06/2024,HOL 9987,,34x HP 260 G1/800 G1/8300 Ultra slim Desktop PCs,2072.95,T1,414.59,1
-SI,HLB001,4000,0,13/07/2024,HOL SLA 2,,Maintenance and support of IT Infrastructure - SLA,2000.00,T1,400.00,1
-SI,HLB001,4000,0,17/07/2024,HB-FT-O98,,34x HP 260 G1/800 G1/8300 Ultra slim Desktop PCs,26000.00,T1,5200.00,1
-SI,FEL001,4000,0,04/09/2024,Feltham - FT 09,,34x HP 260 G1/800 G1/8300 Ultra slim Desktop PCs,17173.00,T1,3434.60,1
-SI,SAL001,4000,0,09/07/2024,Q-6432c,,10x HP/Dell Business Laptops,4500.00,T1,900.00,1
-SI,SAL001,4000,0,09/07/2024,Q-6432c,,Installation Configuration Labelling and Testing,500.00,T1,100.00,1
-SI,SAL001,4000,0,13/07/2024,PO: 671498,,Full set of toner (C K M Y),180.00,T1,36.00,1
-SI,SAL001,4000,0,13/07/2024,PO: 671498,,Toner for HP LaserJet,130.00,T1,26.00,1
+SI,HLB001,4000,0,13/07/2024,HOL SLA 2,,Maintenance and support of IT Infrastructure - SLA,2000,T1,400,1
+SI,HLB001,4000,0,17/07/2024,HB-FT-O98,,34x HP 260 G1/800 G1/8300 Ultra slim Desktop PCs,26000,T1,5200,1
+SI,FEL001,4000,0,04/09/2024,Feltham - FT 09,,34x HP 260 G1/800 G1/8300 Ultra slim Desktop PCs,17173,T1,3434.6,1
+SI,SAL001,4000,0,09/07/2024,Q-6432c,,10x HP/Dell Business Laptops,4500,T1,900,1
+SI,SAL001,4000,0,09/07/2024,Q-6432c,,Installation Configuration Labelling and Testing,500,T1,100,1
+SI,SAL001,4000,0,13/07/2024,PO: 671498,,Full set of toner (C K M Y),180,T1,36,1
+SI,SAL001,4000,0,13/07/2024,PO: 671498,,Toner for HP LaserJet,130,T1,26,1
 SI,SAL001,4000,0,01/06/2024,SLA-MAY,,Maintenance and support of IT Infrastructure - SLA May,2073.25,T1,414.65,1
-SI,SAL001,4000,0,09/07/2024,Jun-24,,Maintenance and support of IT Infrastructure - SLA Jun,2000.00,T1,400.00,1
-SI,SAL001,4000,0,09/07/2024,PO: 6437A,,34x HP Ultra slim Desktop PCs,15980.00,T1,3196.00,1
-SI,SAL001,4000,0,09/07/2024,PO: 6423C,,10x HP/Dell Business Laptops,4500.00,T1,900.00,1
-SI,SAL001,4000,0,09/07/2024,PO: 6423C,,Installation Configuration Labelling and Testing,500.00,T1,100.00,1
-SI,SAL001,4000,0,16/06/2024,PO: 665879,,Maintenance and support of IT Infrastructure - SLA,737.50,T1,147.50,1
-SI,SAL001,4000,0,24/07/2024,PO:673106,,Create new Image deployment Install and Config 42x HP Laptops,2750.00,T1,550.00,1
+SI,SAL001,4000,0,09/07/2024,Jun-24,,Maintenance and support of IT Infrastructure - SLA Jun,2000,T1,400,1
+SI,SAL001,4000,0,09/07/2024,PO: 6437A,,34x HP Ultra slim Desktop PCs,15980,T1,3196,1
+SI,SAL001,4000,0,09/07/2024,PO: 6423C,,10x HP/Dell Business Laptops,4500,T1,900,1
+SI,SAL001,4000,0,09/07/2024,PO: 6423C,,Installation Configuration Labelling and Testing,500,T1,100,1
+SI,SAL001,4000,0,16/06/2024,PO: 665879,,Maintenance and support of IT Infrastructure - SLA,737.5,T1,147.5,1
+SI,SAL001,4000,0,24/07/2024,PO:673106,,Create new Image deployment Install and Config 42x HP Laptops,2750,T1,550,1
 SI,SAL001,4000,0,23/07/2024,PO:665879,,Maintenance and support of IT Infrastructure - SLA 15-30 June,368.75,T1,73.75,1
-SI,SAL001,4000,0,01/08/2024,SLA - August 2024,,Maintenance and support of IT Infrastructure - SLA Aug,995.00,T1,199.00,1
-SI,SAL001,4000,0,01/07/2024,PO: 678147,,Maintenance and support of IT Infrastructure - SLA Jul,995.00,T1,199.00,1
+SI,SAL001,4000,0,01/08/2024,SLA - August 2024,,Maintenance and support of IT Infrastructure - SLA Aug,995,T1,199,1
+SI,SAL001,4000,0,01/07/2024,PO: 678147,,Maintenance and support of IT Infrastructure - SLA Jul,995,T1,199,1

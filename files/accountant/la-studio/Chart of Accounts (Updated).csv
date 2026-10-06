@@ -1,0 +1,30 @@
+Account Number,Account Name,Type,Detail Type
+100,Barclays Business,Cash at bank and in hand,Cash on hand
+101,Petty Cash,Cash at bank and in hand,Cash on hand
+152,Prepaid Expenses,Current Assets,Other Current Assets
+153,Accounts Receiveable,Current Assets,Other Current Assets
+155,Cash withdrawn,Current Assets,Other Current Assets
+200,Cost of Goods Sold,Cost of Sales,Supplies and materials - COS
+300,"Printing, Postage & Stationary",Expenses,Office/General Administrative Expenses
+301,Sub-contractors,Expenses,Payroll Expense
+302,Office Supplies,Expenses,Office/General Administrative Expenses
+303,Rent,Expenses,Office/General Administrative Expenses
+304,Professional Fee,Expenses,Legal and professional fees
+305,Bank Fee & Charges,Expenses,Bank Charges
+306,Courier & Delivery Charges,Expenses,Office/General Administrative Expenses
+307,Advertising & Marketing,Expenses,Advertising & Promotional
+308,Wages & Salaries,Expenses,Payroll Expense
+309,Motor Vehicle Expense,Expenses,Auto
+310,Utilities & Rates,Expenses,Utilities
+400,VAT,Current Liabilities,Current Tax Liability
+401,Other Loans,Current Liabilities,Current Liabilities
+402,PAYE,Current Liabilities,Current Tax Liability
+450,Sales,Income,Sales of Product Income
+451,Other Income,Income,Other Primary Income
+501,Share Capital,Equity,Owner's Equity
+30701,Facebook,Expense,Advertising & Promotional
+30702,Google,Expense,Advertising & Promotional
+31001,Telephone Charges,Expense,Utilities
+31002,Electricity Bills,Expense,Utilities
+31003,Internet Bills,Expense,Utilities
+452,Interest Received,Other Income,Other Miscellaneous Income
