@@ -52,6 +52,7 @@ const description = "Portfolio and projects by Virgilio MF Almeida.";
 const pages = [
   ["index.html", { title: `${profile.name} | Portfolio`, description, route: "home" }],
   ["about/index.html", { title: `About | ${profile.name}`, description: "About Virgilio MF Almeida.", route: "about" }],
+  ["diplomas/index.html", { title: `Diplomas | ${profile.name}`, description: "Diplomas and certificates earned by Virgilio MF Almeida.", route: "diplomas" }],
   ["work/index.html", { title: `Work | ${profile.name}`, description: "Projects and capability areas.", route: "work" }],
   ["contact/index.html", { title: `Contact | ${profile.name}`, description: "Get in touch with Virgilio MF Almeida.", route: "contact" }],
 ];

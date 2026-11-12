@@ -13,6 +13,7 @@ import {
   statusStyles,
   thinkingEntries,
   scriptures,
+  diplomas,
 } from "./content.mjs";
 
 const route = document.body.dataset.route || "home";
@@ -117,6 +118,7 @@ function renderBreadcrumb() {
   const crumbs = {
     home: [],
     about: [{ label: "About" }],
+    diplomas: [{ label: "Diplomas" }],
     work: [{ label: "Work" }],
     "work-detail": (() => {
       const project = getProject(routeId);
@@ -149,6 +151,7 @@ function renderSidebar() {
     <nav class="site-nav" aria-label="Primary">
       <a class="${route === "home" ? "is-active" : ""}" href="/">Home</a>
       <a class="${route === "about" ? "is-active" : ""}" href="/about/">About</a>
+      <a class="${route === "diplomas" ? "is-active" : ""}" href="/diplomas/">Diplomas</a>
       <a class="${route === "work" || route === "work-detail" ? "is-active" : ""}" href="/work/">Work</a>
       <a class="${route === "contact" ? "is-active" : ""}" href="/contact/">Contact</a>
     </nav>
@@ -231,7 +234,7 @@ function renderHome() {
           <strong>${sections.length} sections</strong>
         </div>
         <div class="signal-grid">
-          ${sections.map((s) => `<a href="/work/" style="--area-color: ${s.accent}"><span>${escapeHtml(s.title)}</span></a>`).join("")}
+          ${sections.map((s) => `<a href="/work/"${s.featured ? ` class="is-featured"` : ""} style="--area-color: ${s.accent}"><span>${escapeHtml(s.title)}</span></a>`).join("")}
         </div>
       </div>
     </div>
@@ -308,9 +311,138 @@ function renderAbout() {
   `);
 }
 
+function diplomaViewerUrl(diploma) {
+  const params = new URLSearchParams({
+    file: diploma.pdf,
+    title: diploma.title,
+    back: `/diplomas/#${diploma.id}`,
+    backLabel: "Back to diplomas",
+  });
+  return `/view/?${params}`;
+}
+
+function diplomaSlide(diploma, index) {
+  const openHref = diploma.pdf ? diplomaViewerUrl(diploma) : diploma.image;
+  const openTarget = diploma.pdf ? "" : ` target="_blank" rel="noopener"`;
+  return `
+    <figure class="diploma-slide" id="${escapeHtml(diploma.id)}" data-index="${index}">
+      <a class="diploma-frame" href="${escapeHtml(openHref)}"${openTarget}>
+        <img src="${escapeHtml(diploma.image)}" alt="${escapeHtml(diploma.title)} certificate" loading="${index < 2 ? "eager" : "lazy"}">
+      </a>
+      <figcaption class="diploma-caption">
+        <div>
+          ${diploma.issuer ? `<span class="diploma-issuer">${escapeHtml(diploma.issuer)}</span>` : ""}
+          <h2>${escapeHtml(diploma.title)}</h2>
+        </div>
+        <div class="diploma-actions">
+          <a class="button secondary" href="${escapeHtml(openHref)}"${openTarget}>${diploma.pdf ? "View PDF" : "Full size"}</a>
+          ${diploma.verify ? `<a class="button primary" href="${escapeHtml(diploma.verify)}" target="_blank" rel="noopener">Verify</a>` : ""}
+        </div>
+      </figcaption>
+    </figure>
+  `;
+}
+
+function renderDiplomas() {
+  const header = `
+    <div class="page-header">
+      ${introKicker("Diplomas")}
+      <h1>Diplomas and certificates</h1>
+      <p>
+        The certificates I have earned so far. Scroll through them, open any one in full, and use the verify link where the issuer offers one.
+      </p>
+    </div>
+  `;
+
+  if (!diplomas.length) {
+    return shell(`${header}<p class="empty-state">Certificates will be added here soon.</p>`);
+  }
+
+  const controls = diplomas.length > 1 ? `
+    <div class="diploma-controls">
+      <div class="diploma-stepper">
+        <button class="diploma-step" data-diploma-prev aria-label="Previous certificate">&#8249;</button>
+        <span class="diploma-count" data-diploma-count>1 / ${diplomas.length}</span>
+        <button class="diploma-step" data-diploma-next aria-label="Next certificate">&#8250;</button>
+      </div>
+      <div class="diploma-thumbs">
+        ${diplomas.map((d, i) => `
+          <button class="diploma-thumb${i === 0 ? " is-active" : ""}" data-diploma-thumb="${i}" aria-label="Show ${escapeHtml(d.title)}">
+            <img src="${escapeHtml(d.thumb)}" alt="" loading="lazy">
+          </button>
+        `).join("")}
+      </div>
+    </div>
+  ` : "";
+
+  return shell(`
+    ${header}
+    <div class="diploma-viewer">
+      <div class="diploma-track" data-diploma-track tabindex="0" aria-label="Certificates">
+        ${diplomas.map(diplomaSlide).join("")}
+      </div>
+      ${controls}
+    </div>
+  `);
+}
+
+function bindDiplomas() {
+  if (route !== "diplomas") return;
+  const track = document.querySelector("[data-diploma-track]");
+  if (!track) return;
+
+  const slides = [...track.querySelectorAll(".diploma-slide")];
+  const thumbs = [...document.querySelectorAll("[data-diploma-thumb]")];
+  const counter = document.querySelector("[data-diploma-count]");
+  let current = 0;
+
+  const mark = (index) => {
+    if (!slides[index]) return;
+    current = index;
+    thumbs.forEach((t, i) => t.classList.toggle("is-active", i === current));
+    if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+    history.replaceState(null, "", `#${slides[current].id}`);
+  };
+
+  // Ignore scroll events while a button-driven scroll is still moving.
+  let lockUntil = 0;
+
+  const show = (index, smooth = true) => {
+    const next = (index + slides.length) % slides.length;
+    mark(next);
+    lockUntil = Date.now() + (smooth ? 700 : 0);
+    track.scrollTo({ left: next * track.clientWidth, behavior: smooth ? "smooth" : "auto" });
+  };
+
+  let settle;
+  track.addEventListener("scroll", () => {
+    clearTimeout(settle);
+    settle = setTimeout(() => {
+      if (Date.now() < lockUntil) return;
+      const index = Math.round(track.scrollLeft / Math.max(track.clientWidth, 1));
+      if (index !== current) mark(index);
+    }, 80);
+  });
+
+  document.querySelector("[data-diploma-prev]")?.addEventListener("click", () => show(current - 1));
+  document.querySelector("[data-diploma-next]")?.addEventListener("click", () => show(current + 1));
+  thumbs.forEach((thumb) => thumb.addEventListener("click", () => show(Number(thumb.dataset.diplomaThumb))));
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") show(current - 1);
+    if (event.key === "ArrowRight") show(current + 1);
+  });
+
+  window.addEventListener("resize", () => show(current, false));
+
+  const start = slides.findIndex((s) => `#${s.id}` === decodeURIComponent(location.hash));
+  if (start > 0) show(start, false);
+}
+
 function renderWork() {
+  const isShown = (s) => s.featured || getVisibleProjectsBySection(s.id).length > 0;
   const filterChips = sections
-    .filter((s) => getVisibleProjectsBySection(s.id).length > 0)
+    .filter(isShown)
     .map(
       (s) => `
         <button class="filter-chip" data-filter="${s.id}" style="--chip-color: ${s.accent}">
@@ -324,13 +456,13 @@ function renderWork() {
   const groupedContent = sections.map((section) => {
     const sectionRoles = getRolesBySection(section.id);
     const sectionProjectCount = getVisibleProjectsBySection(section.id).length;
-    if (sectionProjectCount === 0) return "";
+    if (sectionProjectCount === 0 && !section.featured) return "";
 
     const roleBlocks = sectionRoles.map((role) => {
       const roleProjects = getVisibleProjectsByRole(role.id);
       if (roleProjects.length === 0) return "";
       return `
-        <details class="role-block" data-section="${section.id}">
+        <details class="role-block" data-section="${section.id}"${section.featured ? " open" : ""}>
           <summary class="role-header" style="--area-color: ${section.accent}">
             <h3>${escapeHtml(role.title)}</h3>
             <span class="role-toggle-meta">${roleProjects.length} project${roleProjects.length !== 1 ? "s" : ""}</span>
@@ -341,18 +473,22 @@ function renderWork() {
     }).filter(Boolean).join("");
 
     const sectionScripture = scriptures[section.id] ? scriptureBlock(section.id) : "";
+    const emptyNote = sectionProjectCount === 0 && section.emptyNote
+      ? `<p class="empty-state section-empty">${escapeHtml(section.emptyNote)}</p>`
+      : "";
 
     return `
-      <details class="section-block" data-section-group="${section.id}">
+      <details class="section-block${section.featured ? " is-featured" : ""}" data-section-group="${section.id}"${section.featured ? " open" : ""}>
         <summary class="section-block-header" style="--area-color: ${section.accent}">
           <div class="section-summary-content">
             <h2>${escapeHtml(section.title)}</h2>
             <p>${escapeHtml(section.summary)}</p>
           </div>
-          <span class="section-toggle-meta">${sectionProjectCount} project${sectionProjectCount !== 1 ? "s" : ""}</span>
+          <span class="section-toggle-meta">${sectionProjectCount === 0 ? "Coming soon" : `${sectionProjectCount} project${sectionProjectCount !== 1 ? "s" : ""}`}</span>
         </summary>
         ${sectionScripture}
         ${roleBlocks}
+        ${emptyNote}
       </details>
     `;
   }).filter(Boolean).join("");
@@ -494,6 +630,7 @@ function renderRoute() {
   const routes = {
     home: renderHome,
     about: renderAbout,
+    diplomas: renderDiplomas,
     work: renderWork,
     "work-detail": renderProject,
     contact: renderContact,
@@ -507,6 +644,7 @@ renderRoute();
 renderBreadcrumb();
 bindNavigation();
 bindFilters();
+bindDiplomas();
 
 
 document.querySelectorAll("[data-current-year]").forEach((element) => {

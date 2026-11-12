@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node tools/sync.mjs && node tools/build-pdfs.mjs",
+    "build": "node tools/sync.mjs && node tools/sync-diplomas.mjs && node tools/build-pdfs.mjs",
+    "sync-diplomas": "node tools/sync-diplomas.mjs",
     "build-pdfs": "node tools/build-pdfs.mjs",
     "generate": "node tools/generate-pages.mjs",
     "generate-descriptions": "node tools/generate-descriptions.mjs",

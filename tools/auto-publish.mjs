@@ -18,6 +18,9 @@ async function main() {
   // 1. Sync files from Portfolio folder
   run("node tools/sync.mjs", "SYNC — Scanning Portfolio folder");
 
+  // 1b. Sync diplomas (renders certificates to images)
+  run("node tools/sync-diplomas.mjs", "DIPLOMAS — Rendering certificates");
+
   // 2. Convert Office files to watermarked PDFs
   run("node tools/build-pdfs.mjs", "BUILD PDFS — Converting documents");
 

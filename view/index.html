@@ -104,12 +104,14 @@
       const file = params.get("file");
       const title = params.get("title") || "Document";
       const back = params.get("back") || "/work/";
+      const backLabel = params.get("backLabel") || "Back to project";
       const root = document.getElementById("viewer-root");
       const titleEl = document.getElementById("doc-title");
       const backLink = document.getElementById("back-link");
 
       titleEl.textContent = title;
       backLink.href = back;
+      backLink.textContent = backLabel;
 
       if (!file) {
         root.innerHTML = '<div class="viewer-error">No document specified.</div>';

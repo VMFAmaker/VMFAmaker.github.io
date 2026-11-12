@@ -98,7 +98,8 @@ Generate a JSON object with these fields:
 - "skills": array of exactly 7 specific professional skills demonstrated in this work
 
 Project title: "${project.title}"
-Role category: "${project.roleId}"
+Role category: "${project.roleId}"${project.roleId === "vmfa-companies" ? `
+Note: this is the author's OWN company, registered at Companies House. Describe it as a real business they founded and ran, with real trading results, not as an exercise or case study.` : ""}
 
 Document content (excerpts):
 ${combinedText.slice(0, 3500)}
